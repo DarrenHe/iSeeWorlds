@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="何敏 · Darren He｜新见界 · iSeeWorlds：全球产品、国际化与本地化、汽车软件、写作与跨市场实践的个人主页。" />
+  <meta name="author" content="Darren He" />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <meta name="theme-color" content="#fbfcfd" />
+  <link rel="canonical" href="https://iseeworlds.com/" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <meta property="og:type" content="profile" />
+  <meta property="og:site_name" content="iSeeWorlds" />
+  <meta property="og:title" content="新见界 · iSeeWorlds | 何敏 · Darren He" />
+  <meta property="og:description" content="全球产品、国际化与本地化、汽车软件、写作与跨市场实践。" />
+  <meta property="og:url" content="https://iseeworlds.com/" />
+  <meta property="og:image" content="https://iseeworlds.com/assets/darren-portrait-900.webp" />
+  <meta property="og:image:alt" content="Darren He professional portrait" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="profile:first_name" content="Darren" />
+  <meta property="profile:last_name" content="He" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="iSeeWorlds | Darren He" />
+  <meta name="twitter:description" content="Global product, internationalization & localization, automotive software, writing and cross-market practice." />
+  <meta name="twitter:image" content="https://iseeworlds.com/assets/darren-portrait-900.webp" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://iseeworlds.com/#person",
+        "name": "Darren He",
+        "alternateName": "何敏",
+        "url": "https://iseeworlds.com/",
+        "image": "https://iseeworlds.com/assets/darren-portrait-900.webp",
+        "jobTitle": "Product Manager and Author",
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "Peking University Guanghua School of Management"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/darren-iseeworlds"
+        ]
+      },
+      {
+        "@type": "Book",
+        "@id": "https://iseeworlds.com/#goxedge-book",
+        "name": "出海新势力：GoxEDGE全球拓展战略模型",
+        "alternateName": "GoxEDGE: Global Expansion Strategy Model",
+        "author": {"@id": "https://iseeworlds.com/#person"},
+        "publisher": {"@type": "Organization", "name": "China Machine Press"},
+        "inLanguage": ["zh-CN", "en"]
+      }
+    ]
+  }
+  </script>
+  <title>新见界 · iSeeWorlds | 何敏 · Darren He</title>
+  <style>
+    :root{
+      --ink:#0b2033;
+      --ink-2:#22384a;
+      --muted:#66798a;
+      --soft:#8b9aa7;
+      --line:#dce5eb;
+      --paper:#fbfcfd;
+      --surface:#ffffff;
+      --surface-2:#f3f8fb;
+      --accent:#2472b5;
+      --accent-2:#6aa5d3;
+      --accent-soft:#dbeaf5;
+      --warm:#b78c5c;
+      --max:1180px;
+      --sans:ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+      --display:ui-sans-serif,-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI","PingFang SC","Hiragino Sans GB","Noto Sans CJK SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.72;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    body.lang-zh [data-en]{display:none!important}
+    body.lang-en [data-zh]{display:none!important}
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    button{font-family:inherit}
+    :focus-visible{outline:3px solid rgba(36,114,181,.38);outline-offset:3px}
+    .skip-link{position:fixed;left:16px;top:12px;z-index:1000;padding:10px 14px;background:var(--ink);color:#fff;border-radius:6px;transform:translateY(-160%);transition:transform .18s ease}
+    .skip-link:focus{transform:translateY(0)}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 42px}
+
+    .topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(18px);border-bottom:1px solid rgba(11,32,51,.08)}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:28px}
+    .identity{display:flex;align-items:center;gap:12px;min-width:220px}
+    .wordmark{font-family:var(--display);font-size:18px;font-weight:740;letter-spacing:-.025em;line-height:1.1;color:var(--ink);white-space:nowrap}
+    .wordmark .brand-i{color:var(--accent);font-weight:760}
+    .identity small{display:block;font-size:10.5px;line-height:1.2;color:var(--muted);margin-top:5px;letter-spacing:.04em}
+    .avatar{display:none}
+    .navlinks{display:flex;align-items:center;gap:23px;font-size:12.5px;color:#4d5660}
+    .navlinks a:hover{color:var(--ink)}
+    .lang-switch{display:flex;gap:3px;padding:3px;border:1px solid #cccdc9;border-radius:999px;background:rgba(255,255,255,.6)}
+    .lang-switch button{border:0;background:transparent;border-radius:999px;padding:6px 9px;font-size:11px;color:var(--muted);cursor:pointer}
+    .lang-switch button.active{background:var(--ink);color:#fff}
+    .navlinks a{transition:color .18s ease}
+    .navlinks a:hover{color:var(--accent)}
+    .menu-toggle{display:none;border:0;background:transparent;padding:7px;cursor:pointer;color:var(--ink)}
+    .menu-toggle span{display:block;width:20px;height:1.5px;background:currentColor;margin:4px 0;transition:.18s ease}
+    .mobile-menu{display:none;border-top:1px solid rgba(11,32,51,.08);padding:8px 0 16px}
+    .mobile-menu a{display:block;padding:10px 0;font-size:13px;color:#405565;border-bottom:1px solid rgba(11,32,51,.06)}
+    .mobile-menu a:last-child{border-bottom:0}
+
+    .hero{padding:82px 0 0;background:radial-gradient(circle at 82% 12%,rgba(76,145,198,.13),transparent 30%),linear-gradient(180deg,#ffffff 0%,#f5f9fc 64%,#fbfcfd 100%)}
+    .hero-main{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(280px,.65fr);gap:84px;align-items:center;padding-bottom:66px}
+    .eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:760;margin-bottom:19px}
+    h1{font-family:var(--display);font-size:64px;line-height:1.04;letter-spacing:-.046em;margin:0;font-weight:720;color:var(--ink)}
+    .hero-lede{font-size:18px;line-height:1.82;color:#31485a;max-width:760px;margin:26px 0 28px}
+    .tagline{padding-top:23px;border-top:1px solid #cfdfe9;max-width:760px}
+    .tagline strong{display:block;font-size:23px;line-height:1.35;font-weight:680;letter-spacing:-.018em;color:#153954}
+    .tagline span{display:block;font-size:14px;color:var(--muted);margin-top:7px;letter-spacing:.04em}
+    .hero-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:31px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 18px;font-size:12px;font-weight:720;letter-spacing:.02em;border:1px solid #b8c8d4;background:rgba(255,255,255,.78);border-radius:7px;transition:.18s ease}
+    .btn:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-1px)}
+    .btn.primary{background:var(--ink);border-color:var(--ink);color:#fff}
+    .btn.primary:hover{background:#123a59;border-color:#123a59;color:#fff}
+    .portrait-wrap{max-width:344px;margin-left:auto;position:relative}
+    .portrait-wrap:before{content:"";position:absolute;inset:8% -11% -8% 12%;background:radial-gradient(circle at 50% 45%,rgba(82,143,188,.18),rgba(82,143,188,0) 68%);filter:blur(15px);pointer-events:none}
+    .portrait{aspect-ratio:4/5;overflow:hidden;background:#dfe6eb;border:1px solid rgba(63,91,112,.14);border-radius:12px;box-shadow:0 24px 70px rgba(28,57,80,.15);position:relative}
+    .portrait:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.22),inset 0 -46px 70px rgba(243,248,251,.08);pointer-events:none}
+    .portrait img{width:100%;height:100%;object-fit:cover;object-position:center 17%;filter:saturate(.94) contrast(1.025) brightness(1.015)}
+    .portrait-meta{display:flex;justify-content:center;gap:16px;padding-top:13px;font-size:11px;color:#506779;letter-spacing:.035em;text-transform:none;font-weight:620;text-align:center}
+
+    .profile-strip{border-top:1px solid rgba(11,32,51,.08);border-bottom:1px solid rgba(11,32,51,.08);background:rgba(255,255,255,.52)}
+    .profile-strip .wrap{max-width:var(--max);padding-left:42px;padding-right:42px}
+    .profile-grid{display:grid;grid-template-columns:max-content minmax(34px,1fr) max-content minmax(34px,1fr) max-content minmax(34px,1fr) max-content;align-items:center}
+    .profile-item{padding:23px 0;display:flex;align-items:center;justify-content:flex-start;gap:11px;min-width:0;white-space:nowrap;text-align:left}
+    .profile-item:last-of-type{justify-content:flex-end;text-align:right}
+    .profile-sep{width:1px;height:30px;background:rgba(17,24,32,.10);justify-self:center;align-self:center}
+    .profile-item strong{display:inline;font-size:15px;line-height:1.3;font-weight:790;margin:0;color:#17344a;flex:0 0 auto}
+    .profile-item span{font-size:10.4px;color:#586d7e;line-height:1.4;min-width:0;letter-spacing:-.006em}
+    .profile-item .book-one-line{white-space:nowrap;font-size:10.1px;letter-spacing:-.018em}
+    body.lang-en .profile-item .book-one-line{white-space:nowrap;font-size:9.7px}
+
+    body.lang-en{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;font-size:15.5px;line-height:1.68}
+    body.lang-en .wordmark{font-size:18px;letter-spacing:-.02em}
+    body.lang-en .identity small{font-size:10.8px;letter-spacing:.025em}
+    body.lang-zh h1{font-size:58px;line-height:1.04;letter-spacing:-.035em}
+    body.lang-en h1{font-size:58px;line-height:1.02;letter-spacing:-.04em;font-weight:700}
+    body.lang-en .hero-lede{font-size:17.2px;line-height:1.72;max-width:745px;margin-top:34px}
+    body.lang-en .tagline strong{font-size:22px;line-height:1.32}
+    body.lang-en .tagline span{font-size:13.5px;line-height:1.55;letter-spacing:.015em}
+    body.lang-en .profile-item strong{font-size:14.4px}
+    body.lang-en .profile-item span{font-size:10.4px;letter-spacing:-.006em}
+    body.lang-en .section-kicker{font-size:12.5px;letter-spacing:.095em}
+    body.lang-en h2{font-size:34px;line-height:1.22;letter-spacing:-.018em;font-weight:650;max-width:900px}
+    body.lang-en .sublede{font-size:15.5px;line-height:1.7;max-width:825px}
+    body.lang-en .prose p{font-size:15.3px;line-height:1.72}
+    body.lang-en .prose p:first-child{font-size:16.5px;line-height:1.68}
+    body.lang-en .company h3{font-size:17.5px}
+    body.lang-en .role-row p{font-size:14.3px;line-height:1.72}
+    body.lang-en .focus-card h3{font-size:16.5px;line-height:1.35}
+    body.lang-en .focus-card p{font-size:13.2px;line-height:1.6}
+    body.lang-en .book-copy h3{font-size:27px;line-height:1.34}
+    body.lang-en .speaking-intro{font-size:23px;line-height:1.42}
+    body.lang-en .speaking-copy{font-size:14.5px;line-height:1.7}
+    body.lang-en .media-row span,body.lang-en .media-row a{font-size:13.2px;line-height:1.55}
+    body.lang-en .contact-lede{font-size:15.2px;line-height:1.7}
+
+    section{padding:82px 0;border-bottom:1px solid var(--line)}
+    #about,#book,#media{background:#fff}
+    #experience,#focus,#ideas,#speaking,#now,#contact{background:var(--paper)}
+    .section-head{display:grid;grid-template-columns:185px 1fr;gap:52px;margin-bottom:44px}
+    .section-kicker{font-size:13px;letter-spacing:.11em;text-transform:uppercase;color:#1d6aa5;font-weight:820;padding-top:5px;line-height:1.35}
+    h2{font-family:var(--display);font-size:38px;line-height:1.28;letter-spacing:-.022em;margin:0;font-weight:650}
+    .sublede{font-size:15.5px;line-height:1.8;color:var(--muted);max-width:820px;margin:13px 0 0}
+
+    .about-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:72px}
+    .prose p{font-size:15.5px;color:#3e4953;margin:0 0 18px}
+    .prose p:first-child{font-size:17px;color:#29333c}
+    .facts{border-top:2px solid #183c58}
+    .fact{display:grid;grid-template-columns:126px 1fr;gap:22px;padding:15px 0;border-bottom:1px solid var(--line)}
+    .fact b{font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+    .fact span{font-size:13.5px;color:#35404a}
+
+    .timeline{border-top:2px solid #183c58}
+    .role-row{display:grid;grid-template-columns:185px 285px 1fr;gap:34px;padding:29px 0;border-bottom:1px solid var(--line)}
+    .phase{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:700;padding-top:3px}
+    .company h3{font-size:18px;margin:0 0 3px;font-weight:680}
+    .company .role{font-size:12.5px;color:var(--muted);line-height:1.55}
+    .role-row p{font-size:14.2px;color:#45515b;margin:0;line-height:1.8}
+    .career-note{margin-top:25px;padding:22px 24px;background:linear-gradient(135deg,#ffffff 0%,#f4f9fc 100%);border:1px solid #d7e4ec;border-left:3px solid var(--accent);border-radius:8px;font-size:13.5px;color:#425667}
+
+    .focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .focus-card{background:var(--surface);border:1px solid #d9e4eb;padding:25px;min-height:180px;border-radius:10px;box-shadow:0 8px 26px rgba(24,56,82,.045)}
+    .focus-card .num{font-size:10px;color:var(--accent);font-weight:700;letter-spacing:.12em}
+    .focus-card h3{font-size:17px;margin:18px 0 9px;font-weight:650}
+    .focus-card p{font-size:13px;color:var(--muted);margin:0}
+
+    .book-shell{display:grid;grid-template-columns:.78fr 1.22fr;border:1px solid #d6e1e8;background:var(--surface);border-radius:12px;overflow:hidden;box-shadow:0 14px 44px rgba(22,53,77,.06)}
+    .book-side{display:flex;align-items:center;justify-content:center;padding:46px;background:linear-gradient(145deg,#e8f0f5 0%,#f3eee7 100%)}
+    .book-cover{width:244px;aspect-ratio:.69/1;background:#faf9f5;border:1px solid #cec9bf;box-shadow:0 20px 44px rgba(20,26,32,.12);padding:28px 24px;display:flex;flex-direction:column;justify-content:space-between}
+    .series{font-size:8px;letter-spacing:.12em;color:#7b6d59;text-transform:uppercase;line-height:1.6}
+    .book-title-cn{font-size:25px;line-height:1.36;font-weight:700;color:#1d2833;margin:18px 0 12px}
+    .book-model{font-size:13px;line-height:1.5;color:#46515b}
+    .book-tag{font-size:11px;color:#6c5b44;border-top:1px solid #c8c1b4;padding-top:13px;margin-top:18px}
+    .book-author{font-size:10.5px;color:#46515a}
+    .book-copy{padding:47px 52px}
+    .book-copy .meta{font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:16px}
+    .book-copy h3{font-family:var(--display);font-size:29px;line-height:1.4;margin:0 0 19px;font-weight:700}
+    .book-copy p{font-size:14.5px;color:#46515b;margin:0 0 17px}
+    .book-keyline{margin:24px 0;padding:18px 0;border-top:1px solid #cfd0cc;border-bottom:1px solid #cfd0cc}
+    .book-keyline strong{display:block;font-size:18px;font-weight:650;margin-bottom:6px}
+    .book-keyline span{font-size:13px;color:var(--muted)}
+    .book-points{display:grid;grid-template-columns:1fr 1fr;gap:12px 22px;margin-top:22px}
+    .book-point{font-size:12.5px;color:#3d4852;padding-top:10px;border-top:1px solid #e1e1dd}
+    .book-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+    .book-actions .btn{min-height:42px}
+
+    .ideas-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .idea-block{padding:25px;background:var(--surface);border:1px solid #d9e4eb;border-radius:10px}
+    .idea-block h3{font-size:17px;margin:0 0 9px;font-weight:650}
+    .idea-block p{font-size:13px;color:var(--muted);margin:0}
+    .question-list{margin-top:28px;border-top:2px solid #183c58}
+    .question{display:grid;grid-template-columns:28px 1fr;gap:16px;align-items:start;padding:16px 0;border-bottom:1px solid var(--line);font-size:13.5px;color:#38444e}
+    .question .qmark{width:24px;height:24px;border:1px solid #b9d4e8;border-radius:999px;display:flex;align-items:center;justify-content:center;font-size:9px;line-height:1;color:var(--accent);font-weight:800;letter-spacing:.04em;margin-top:1px;background:#f7fbfe}
+
+    .speaking-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:70px}
+    .speaking-intro{font-size:25px;line-height:1.5;margin:0;color:#28333c;font-weight:560}
+    .speaking-copy{font-size:14.5px;color:var(--muted);margin-top:19px}
+    .topics{border-top:2px solid #183c58}
+    .topic{padding:16px 0;border-bottom:1px solid var(--line)}
+    .topic strong{display:block;font-size:14px;margin-bottom:3px}
+    .topic span{font-size:12px;color:var(--muted)}
+
+    .media-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:40px}
+    .bio-box{background:var(--surface);border:1px solid #d9e4eb;padding:27px;border-radius:10px}
+    .bio-box + .bio-box{margin-top:18px}
+    .bio-box h3{font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;color:var(--accent);margin:0 0 13px}
+    .bio-box p{font-size:13.5px;color:#44505a;margin:0}
+    .media-list{border-top:2px solid #183c58}
+    .media-row{display:grid;grid-template-columns:142px 1fr;gap:20px;padding:14px 0;border-bottom:1px solid var(--line)}
+    .media-row b{font-size:10px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted)}
+    .media-row span,.media-row a{font-size:13px;color:#36414a;overflow-wrap:anywhere}
+
+    .now-grid{display:grid;grid-template-columns:.76fr 1.24fr;gap:70px}
+    .now-copy{font-size:24px;line-height:1.5;margin:0;color:#29343d;font-weight:560}
+    .now-list{display:grid;grid-template-columns:1fr 1fr;border-top:2px solid #183c58}
+    .now-item{padding:16px 16px 16px 0;border-bottom:1px solid var(--line);font-size:13px;color:#45515b}
+    .now-item:nth-child(even){padding-left:16px;border-left:1px solid var(--line)}
+
+    .contact-grid{display:grid;grid-template-columns:1fr;gap:0;align-items:start}
+    .contact-lede{font-size:15px;color:var(--muted);max-width:760px;margin:13px 0 0}
+    .contact-list{border-top:2px solid #183c58;max-width:820px;margin-left:237px}
+    .contact-row{display:grid;grid-template-columns:160px 1fr;gap:20px;padding:15px 0;border-bottom:1px solid var(--line)}
+    .contact-row strong{font-size:11px;letter-spacing:.04em}
+    .contact-row a,.contact-row span{font-size:13px;color:#3e4953;overflow-wrap:anywhere}
+    .contact-row a:hover{text-decoration:underline}
+
+    footer{padding:36px 0 44px}
+    .footer{display:flex;justify-content:space-between;align-items:center;gap:30px;font-size:11px;color:var(--muted)}
+    .footer-person{display:flex;align-items:center;gap:10px}
+    .footer-person img{width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:center 17%}
+    .footer-person strong{font-size:12px;color:var(--ink)}
+    .footer-note{max-width:430px;text-align:right;line-height:1.65}
+
+    @media(max-width:1120px){
+      .profile-strip .wrap{padding-left:42px;padding-right:42px}
+      .profile-grid{grid-template-columns:1fr 1fr}
+      .profile-sep{display:none}
+      .profile-item{white-space:normal;justify-content:flex-start!important;text-align:left!important;padding:20px 26px}
+      .profile-item:nth-of-type(odd){padding-left:0;border-right:1px solid var(--line)}
+      .profile-item:nth-of-type(even){padding-right:0}
+      .profile-item:nth-of-type(-n+2){border-bottom:1px solid var(--line)}
+      .profile-item .book-one-line,body.lang-en .profile-item .book-one-line{white-space:normal}
+    }
+    @media(max-width:980px){
+      .navlinks>a{display:none}
+      .menu-toggle{display:inline-flex;flex-direction:column;justify-content:center}
+      .mobile-menu.open{display:block}
+      .hero-main,.about-grid,.section-head,.book-shell,.speaking-grid,.media-grid,.now-grid,.contact-grid{grid-template-columns:1fr}
+      .contact-list{margin-left:0;max-width:none}
+      .hero-main{gap:44px}
+      .portrait-wrap{margin:0;max-width:350px;width:56%}
+      .section-head{gap:10px}
+      .role-row{grid-template-columns:135px 210px 1fr}
+      .focus-grid{grid-template-columns:1fr 1fr}
+      .focus-card:last-child{grid-column:1 / -1}
+    }
+    @media(max-width:700px){
+      .wrap{padding:0 22px}
+      nav{height:68px}
+      .identity{min-width:0}
+      .identity small{display:none}
+      .avatar{width:39px;height:39px}
+      .hero{padding-top:52px}
+      h1{font-size:48px}
+      .hero-lede{font-size:16px}
+      .tagline strong{font-size:20px}
+      .portrait-wrap{width:78%;max-width:330px}
+      .profile-strip .wrap{padding-left:22px;padding-right:22px}
+      .profile-item{padding:18px 14px;display:block;white-space:normal;text-align:left}.profile-item strong{display:block;margin-bottom:4px}
+      section{padding:61px 0}
+      h2{font-size:32px}
+      .role-row{grid-template-columns:1fr;gap:7px;padding:23px 0}
+      .focus-grid,.ideas-grid{grid-template-columns:1fr}
+      .focus-card:last-child{grid-column:auto}
+      .book-side{padding:34px 20px}
+      .book-copy{padding:32px 27px}
+      .book-points{grid-template-columns:1fr}
+      .now-list{grid-template-columns:1fr}
+      .now-item,.now-item:nth-child(even){padding:14px 0;border-left:none}
+      .contact-row{grid-template-columns:1fr;gap:5px}
+      .footer{flex-direction:column;align-items:flex-start}
+      .footer-note{text-align:left;max-width:none}
+    }
+  </style>
+</head>
+<body class="lang-zh">
+  <a class="skip-link" href="#main-content"><span data-zh>跳至主要内容</span><span data-en>Skip to main content</span></a>
+  <header class="topbar">
+    <div class="wrap">
+      <nav aria-label="Primary navigation">
+        <a class="identity" href="#home" aria-label="iSeeWorlds home">
+          <div>
+            <div class="wordmark" data-zh>新见界 · <span class="brand-i">i</span>SeeWorlds</div>
+            <div class="wordmark" data-en><span class="brand-i">i</span>SeeWorlds</div>
+            <small data-zh>看见新世界，看见新可能</small>
+            <small data-en>I See Worlds. I See Possibilities.</small>
+          </div>
+        </a>
+        <div class="navlinks">
+          <a href="#about"><span data-zh>关于</span><span data-en>About</span></a>
+          <a href="#experience"><span data-zh>履历</span><span data-en>Experience</span></a>
+          <a href="#book"><span data-zh>著作</span><span data-en>Book</span></a>
+          <a href="#ideas"><span data-zh>观点</span><span data-en>Ideas</span></a>
+          <a href="#speaking"><span data-zh>演讲</span><span data-en>Speaking</span></a>
+          <a href="#media"><span data-zh>媒体</span><span data-en>Media</span></a>
+          <a href="#contact"><span data-zh>联系</span><span data-en>Contact</span></a>
+          <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+          <div class="lang-switch" aria-label="Language selector">
+            <button id="zhBtn" class="active" type="button" aria-pressed="true">中</button>
+            <button id="enBtn" type="button" aria-pressed="false">EN</button>
+          </div>
+        </div>
+      </nav>
+      <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+        <a href="#about"><span data-zh>关于</span><span data-en>About</span></a>
+        <a href="#experience"><span data-zh>履历</span><span data-en>Experience</span></a>
+        <a href="#book"><span data-zh>著作</span><span data-en>Book</span></a>
+        <a href="#ideas"><span data-zh>观点</span><span data-en>Ideas</span></a>
+        <a href="#speaking"><span data-zh>演讲</span><span data-en>Speaking</span></a>
+        <a href="#media"><span data-zh>媒体</span><span data-en>Media</span></a>
+        <a href="#contact"><span data-zh>联系</span><span data-en>Contact</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="wrap hero-main">
+        <div>
+          <div class="eyebrow"><span data-zh>作者 · 全球产品 · 跨市场实践</span><span data-en>Author · Global Product · Cross-market Practice</span></div>
+          <h1 data-zh>何敏 · Darren He</h1><h1 data-en>Darren He</h1>
+          <p class="hero-lede" data-zh>产品经理与作者，拥有 20 多年全球产品、国际化与本地化相关经验。职业实践横跨科技服务、数字业务与汽车软件，持续参与跨市场产品规划、区域适配与全球协同。北京大学光华管理学院 MBA，《出海新势力：GoxEDGE全球拓展战略模型》作者。</p>
+          <p class="hero-lede" data-en>Darren He is a product manager and author with more than two decades of experience in global products, internationalization and localization. His work spans technology services, digital business and automotive software, with sustained involvement in cross-market product planning, regional adaptation and global collaboration. He holds an MBA from Peking University's Guanghua School of Management and is the author of <em>GoxEDGE: Global Expansion Strategy Model</em>.</p>
+          <div class="tagline">
+            <strong data-zh>看见新世界，看见新可能</strong>
+            <strong data-en>I See Worlds. I See Possibilities.</strong>
+            <span data-zh>I See Worlds. I See Possibilities.</span>
+            <span data-en>A personal lens on markets, products, technology and the possibilities between them.</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn primary" href="#experience"><span data-zh>职业与实践</span><span data-en>Experience & Practice</span></a>
+            <a class="btn" href="#book"><span data-zh>著作与观点</span><span data-en>Book & Ideas</span></a>
+          </div>
+        </div>
+        <div class="portrait-wrap">
+          <div class="portrait"><img src="assets/darren-portrait-480.webp" srcset="assets/darren-portrait-480.webp 480w, assets/darren-portrait-900.webp 900w" sizes="(max-width: 700px) 78vw, 344px" width="900" height="1157" fetchpriority="high" decoding="async" alt="Darren He professional portrait" /></div>
+          <div class="portrait-meta"><span data-zh>何敏 · Darren He</span><span data-en>Darren He</span></div>
+        </div>
+      </div>
+      <div class="profile-strip">
+        <div class="wrap profile-grid">
+          <div class="profile-item"><strong data-zh>20+ 年</strong><strong data-en>20+ Years</strong><span data-zh>全球产品、国际化与本地化相关经验</span><span data-en>Global product · localization</span></div>
+          <span class="profile-sep" aria-hidden="true"></span>
+          <div class="profile-item"><strong>MBA</strong><span data-zh>北京大学光华管理学院</span><span data-en>PKU Guanghua</span></div>
+          <span class="profile-sep" aria-hidden="true"></span>
+          <div class="profile-item"><strong data-zh>作者</strong><strong data-en>Author</strong><span class="book-one-line" data-zh>《出海新势力：GoxEDGE全球拓展战略模型》</span><span class="book-one-line" data-en><em>GoxEDGE · Global Expansion Strategy</em></span></div>
+          <span class="profile-sep" aria-hidden="true"></span>
+          <div class="profile-item"><strong data-zh>专业主线</strong><strong data-en>Core Practice</strong><span data-zh>全球化与本地化 · 数字业务与运营 · 汽车产品与全球市场</span><span data-en>Global product · digital ops · automotive · cross-market</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">01 / <span data-zh>关于</span><span data-en>About</span></div>
+          <div>
+            <h2 data-zh>在不同市场之间理解产品，在长期实践中形成判断</h2>
+            <h2 data-en>Understanding products across markets — and turning practice into judgment</h2>
+            <p class="sublede" data-zh>我的工作长期处在全球产品、国际化与本地化、汽车软件的交叉地带。关注的不只是产品能否进入一个市场，更关注它能否在不同规则、文化、数据与组织条件下持续运行。</p>
+            <p class="sublede" data-en>My work sits at the intersection of global products, internationalization and localization, and automotive software. I am interested not only in whether a product can enter a market, but whether it can continue to work under different rules, cultures, data conditions and organizational realities.</p>
+          </div>
+        </div>
+        <div class="about-grid">
+          <div class="prose" data-zh>
+            <p>过去二十多年，我的职业实践持续围绕一个问题展开：一个复杂产品，如何跨越语言、文化、市场与组织边界，仍然保持可用、可运营、可规模化。</p>
+            <p>从全球科技产品的国际化与本地化，到数字业务与运营，再到汽车导航与地图产品管理，我逐步形成的不是单点经验，而是一种跨市场看产品的工作方式：把战略、用户、数据、规则、组织和交付放在同一个系统中判断。</p>
+            <p>写作让我把这些经验进一步结构化。《出海新势力：GoxEDGE全球拓展战略模型》是一次阶段性的系统整理；iSeeWorlds 是我的长期个人主页，记录职业实践、产品与技术观察、写作，以及那些值得持续追问的问题。</p>
+          </div>
+          <div class="prose" data-en>
+            <p>For more than two decades, my work has revolved around one recurring question: how can a complex product cross language, cultural, market and organizational boundaries while remaining usable, operable and scalable?</p>
+            <p>From internationalization and localization of global technology products, to digital business and operations, and later automotive navigation and maps, I developed a cross-market way of working that considers strategy, users, data, rules, organization and delivery as one system.</p>
+            <p>Writing is how I make that experience explicit. <em>GoxEDGE</em> is one structured expression of that work; iSeeWorlds is my long-term personal home for professional experience, observations on products and technology, writing, and questions worth continuing to explore.</p>
+          </div>
+          <div class="facts">
+            <div class="fact"><b><span data-zh>教育</span><span data-en>Education</span></b><span><span data-zh>北京大学光华管理学院 MBA</span><span data-en>MBA, PKU Guanghua School of Management</span></span></div>
+            <div class="fact"><b><span data-zh>职业领域</span><span data-en>Domains</span></b><span><span data-zh>全球产品 · 国际化与本地化 · 汽车导航与地图</span><span data-en>Global product · Internationalization & localization · Automotive navigation & maps</span></span></div>
+            <div class="fact"><b><span data-zh>代表经历</span><span data-en>Career</span></b><span>Newsoft · HP · Moravia · Active Network · Telenav</span></div>
+            <div class="fact"><b><span data-zh>相关项目</span><span data-en>Selected Programs</span></b><span><span data-zh>曾参与 Microsoft、HP、Agilent、Amazon 等全球科技企业相关项目，并持续参与多家中国汽车品牌面向海外市场的产品规划、区域适配与跨市场协同</span><span data-en>Contributed to programs involving Microsoft, HP, Agilent and Amazon, and continues to work across overseas-market product planning, regional adaptation and cross-market collaboration for Chinese automotive brands</span></span></div>
+            <div class="fact"><b><span data-zh>出版</span><span data-en>Book</span></b><span><span data-zh>《出海新势力：GoxEDGE全球拓展战略模型》</span><span data-en>GoxEDGE global expansion strategy book</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">02 / <span data-zh>职业履历</span><span data-en>Experience</span></div>
+          <div>
+            <h2 data-zh>职业阶段不同，主线始终一致：让产品跨越市场真正运行</h2>
+            <h2 data-en>Different career chapters, one consistent thread: making products work across markets</h2>
+            <p class="sublede" data-zh>以下不是职位的简单罗列，而是按能力形成的逻辑，呈现几段最重要的职业阶段及其留下的专业积累。</p>
+            <p class="sublede" data-en>Rather than listing positions, this section traces the career chapters that most shaped my professional capabilities and point of view.</p>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="role-row">
+            <div class="phase"><span data-zh>全球化与本地化</span><span data-en>Globalization & Localization</span></div>
+            <div class="company">
+              <h3>Moravia · HP · Newsoft</h3>
+              <div class="role"><span data-zh>国际化 · 本地化 · 全球交付</span><span data-en>Internationalization · Localization · Global Delivery</span></div>
+            </div>
+            <p data-zh>在全球科技与专业服务环境中，长期参与产品国际化、本地化与跨市场交付，把产品、语言、文化、流程与全球协作连接到可执行的项目体系，并由此形成对全球产品生命周期和市场适配的系统理解。</p>
+            <p data-en>Across global technology and professional-services environments, worked on product internationalization, localization and cross-market delivery — connecting product, language, culture, process and global collaboration into executable programs. This work shaped a systems view of global product lifecycles and market adaptation.</p>
+          </div>
+          <div class="role-row">
+            <div class="phase"><span data-zh>数字业务与运营</span><span data-en>Digital Business & Operations</span></div>
+            <div class="company">
+              <h3>Active Network</h3>
+              <div class="role"><span data-zh>数字业务 · 运营 · 跨团队交付</span><span data-en>Digital Business · Operations · Cross-team Delivery</span></div>
+            </div>
+            <p data-zh>在全球化数字业务环境中积累业务运营、项目推进、技术服务与跨团队协作经验，进一步理解复杂组织中的流程设计、协同机制与规模化交付，以及数字产品如何把业务目标转化为可执行的运营过程。</p>
+            <p data-en>Built experience in business operations, program execution, technology services and cross-team delivery in a global digital environment, with deeper exposure to process design, organizational coordination, scalable delivery and the link between digital products and operating outcomes.</p>
+          </div>
+          <div class="role-row">
+            <div class="phase"><span data-zh>汽车产品与全球市场</span><span data-en>Automotive Products & Global Markets</span></div>
+            <div class="company">
+              <h3>Telenav</h3>
+              <div class="role"><span data-zh>汽车导航 · 全球产品管理 · 跨市场协同</span><span data-en>Automotive Navigation · Global Product Management · Cross-market Collaboration</span></div>
+            </div>
+            <p data-zh>从事汽车导航与地图相关产品管理，持续参与多市场产品规划、地图数据、区域适配、功能演进、数据源切换、客户需求与跨团队协同，在复杂车载产品中平衡全球一致性、本地市场需求与规模化交付。</p>
+            <p data-en>Product management across automotive navigation and map products, spanning multi-market planning, map data, regional adaptation, feature evolution, data-source transitions, customer requirements and cross-functional collaboration — with a recurring focus on balancing global consistency, local-market needs and scalable delivery.</p>
+          </div>
+        </div>
+        <div class="career-note" data-zh>这些阶段逐步形成了一条清晰的专业主线：先理解全球产品如何跨语言、文化与市场完成适配，再理解数字业务如何依靠流程与运营实现规模化，最终在汽车产品与全球市场中持续处理全球一致性、本地需求与复杂交付之间的平衡。</div>
+        <div class="career-note" data-en>Together, these three chapters form a coherent progression: from understanding how global products adapt across language, culture and markets; to learning how digital businesses scale through process and operations; and then to managing automotive products across global markets, where global consistency and local requirements have to coexist.</div>
+      </div>
+    </section>
+
+    <section id="focus">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">03 / <span data-zh>专业聚焦</span><span data-en>Professional Focus</span></div>
+          <div>
+            <h2 data-zh>六个彼此连接、持续积累的专业关注</h2>
+            <h2 data-en>Six connected areas of long-term professional focus</h2>
+          </div>
+        </div>
+        <div class="focus-grid">
+          <div class="focus-card"><div class="num">01</div><h3><span data-zh>全球产品与产品规划</span><span data-en>Global Product & Planning</span></h3><p data-zh>从用户需求与市场差异出发，连接产品规划、版本演进与区域落地，关注复杂产品如何跨市场持续运行。</p><p data-en>Connecting user needs and market differences with roadmaps, releases and regional execution, with a focus on how complex products continue to work across markets.</p></div>
+          <div class="focus-card"><div class="num">02</div><h3><span data-zh>国际化与本地化</span><span data-en>Internationalization & Localization</span></h3><p data-zh>把语言、文化、规则、数据与市场差异前置到产品设计与交付体系，而不是把本地化留到最后一步。</p><p data-en>Bringing language, culture, rules, data and market differences into the product and delivery system — not treating localization as the final step.</p></div>
+          <div class="focus-card"><div class="num">03</div><h3><span data-zh>汽车软件与导航</span><span data-en>Automotive Software & Navigation</span></h3><p data-zh>围绕车载导航、地图数据、多区域产品与功能协同，处理汽车软件在真实市场中的复杂性。</p><p data-en>Working across in-vehicle navigation, map data, multi-region products and feature coordination in real-world automotive software environments.</p></div>
+          <div class="focus-card"><div class="num">04</div><h3><span data-zh>跨市场协同</span><span data-en>Cross-market Collaboration</span></h3><p data-zh>在团队、客户、区域与合作伙伴之间建立共同判断，并推动需求、产品与交付形成闭环。</p><p data-en>Building shared judgment across teams, customers, regions and partners, then carrying it through requirements, product decisions and delivery.</p></div>
+          <div class="focus-card"><div class="num">05</div><h3><span data-zh>方法化与知识沉淀</span><span data-en>Knowledge Codification</span></h3><p data-zh>把长期实践中的经验与判断转化为文章、框架与书籍，使其能够被讨论、验证并持续复用。</p><p data-en>Turning accumulated experience and judgment into writing, frameworks and books that can be discussed, tested and reused over time.</p></div>
+          <div class="focus-card"><div class="num">06</div><h3><span data-zh>AI 与专业工作</span><span data-en>AI & Professional Work</span></h3><p data-zh>持续关注 AI 如何改变知识工作的边界、产品实践的方法，以及专业能力的形成方式。</p><p data-en>Exploring how AI changes the boundaries of knowledge work, the practice of building products and the way professional capability develops.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="book">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">04 / <span data-zh>著作</span><span data-en>Book</span></div>
+          <div>
+            <h2 data-zh>《出海新势力：GoxEDGE全球拓展战略模型》</h2>
+            <h2 data-en>GoxEDGE: A Global Expansion Strategy Model</h2>
+            <p class="sublede" data-zh>一本围绕中国企业全球拓展的系统性作品，关注企业如何从“走出去”进一步走向“走下去”，并在目标市场逐步形成可持续的全球经营能力。</p>
+            <p class="sublede" data-en>A structured book on global expansion, focused on how companies move beyond market entry and build the capabilities required to adapt, operate and stay over time.</p>
+          </div>
+        </div>
+        <div class="book-shell">
+          <div class="book-side">
+            <div class="book-cover" aria-label="Book cover mockup">
+              <div>
+                <div class="series">GOXEDGE · 全球拓展战略模型</div>
+                <div class="book-title-cn">出海新势力</div>
+                <div class="book-model">GoxEDGE<br/>全球拓展战略模型</div>
+                <div class="book-tag">从“走出去”到“走下去”</div>
+              </div>
+              <div class="book-author">何敏 著</div>
+            </div>
+          </div>
+          <div class="book-copy">
+            <div class="meta"><span data-zh>机械工业出版社 · 即将出版</span><span data-en>China Machine Press · Forthcoming</span></div>
+            <h3 data-zh>从“走出去”到“走下去”</h3>
+            <h3 data-en>From entering overseas markets to building the capability to stay and operate</h3>
+            <p data-zh>《出海新势力：GoxEDGE全球拓展战略模型》讨论的不是如何把同一个产品卖到更多国家，而是企业如何判断起点、选择市场、设计路径、形成能力，并在不断变化的规则、市场、文化与组织条件下真正“走下去”。</p>
+            <p data-en>The book is not simply about selling the same product in more countries. It examines how companies assess their starting point, select markets, design an expansion path, build the required capabilities, and continue operating as rules, markets, cultures and organizational demands change.</p>
+            <div class="book-keyline">
+              <strong data-zh>GoxEDGE 全球拓展战略模型</strong>
+              <strong data-en>The GoxEDGE Global Expansion Strategy Model</strong>
+              <span data-zh>战略判断 · EDGE 四大能力 · 六阶段路径 · 认知—行动—反馈飞轮</span>
+              <span data-en>Strategic judgment · Four EDGE capabilities · Six-stage path · Cognition–action–feedback flywheel</span>
+            </div>
+            <p data-zh>全书以战略判断为起点，通过 EDGE 四大能力、探索—定位—执行—赋能—优化—可持续六个阶段，以及认知—行动—反馈飞轮，把市场进入、产品适配、组织承接与能力学习连接为一套持续演进的全球拓展体系。</p>
+            <p data-en>GoxEDGE treats global expansion as an evolving operating system rather than a one-time market-entry decision. It connects strategic judgment, four EDGE capabilities, a six-stage path from exploration to sustainability, and a cognition–action–feedback flywheel into one coherent model.</p>
+            <div class="book-points">
+              <div class="book-point"><span data-zh>战略判断层：判断为什么去、去哪里、何时去以及如何进入</span><span data-en>Strategic judgment: why, where, when and how to expand</span></div>
+              <div class="book-point"><span data-zh>EDGE 四大能力：支撑企业跨市场持续运行的核心能力结构</span><span data-en>Four EDGE capabilities: the core capability structure for sustained cross-market operations</span></div>
+              <div class="book-point"><span data-zh>六阶段路径：探索、定位、执行、赋能、优化与可持续</span><span data-en>Six-stage path: exploration, positioning, execution, empowerment, optimization and sustainability</span></div>
+              <div class="book-point"><span data-zh>认知—行动—反馈飞轮：把实践经验转化为持续学习与能力沉淀</span><span data-en>Cognition–action–feedback flywheel: turning practice into continuous learning and reusable capability</span></div>
+            </div>
+            <div class="book-actions">
+              <a class="btn primary" href="https://goxedge.com/?utm_source=iseeworlds&amp;utm_medium=referral&amp;utm_campaign=author_site"><span data-zh>了解 GoxEDGE</span><span data-en>Explore GoxEDGE</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="ideas">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">05 / <span data-zh>观点</span><span data-en>Ideas</span></div>
+          <div>
+            <h2 data-zh>不追逐短期话题，持续追问那些真正影响产品与经营结果的问题</h2>
+            <h2 data-en>Questions worth returning to after the headlines move on</h2>
+            <p class="sublede" data-zh>这里记录我对产品、技术、全球市场与职业实践的长期观察，也保留那些需要在真实世界里反复验证的判断。</p>
+            <p class="sublede" data-en>This is where I write about products, technology, global markets and professional practice — and return to judgments that need to be tested repeatedly in the real world.</p>
+          </div>
+        </div>
+        <div class="ideas-grid">
+          <div class="idea-block"><h3><span data-zh>产品与技术</span><span data-en>Product & Technology</span></h3><p data-zh>关注复杂产品、AI、软件与用户体验，以及技术如何真正转化为可感知的用户价值。</p><p data-en>Complex products, AI, software and user experience — and how technology becomes value that users can actually perceive.</p></div>
+          <div class="idea-block"><h3><span data-zh>全球市场与跨文化</span><span data-en>Global Markets & Cross-cultural Work</span></h3><p data-zh>关注国际化、本地化、制度与文化差异，以及产品跨市场持续运行所需要的真实条件。</p><p data-en>Internationalization, localization, institutional and cultural differences, and the conditions required for products to keep working across markets.</p></div>
+          <div class="idea-block"><h3><span data-zh>汽车与智能出行</span><span data-en>Automotive & Mobility</span></h3><p data-zh>关注导航、地图、车载软件、数据与区域产品，以及汽车软件与智能出行持续发生的变化。</p><p data-en>Navigation, maps, in-vehicle software, data and regional products, alongside the continuing evolution of automotive software and mobility.</p></div>
+          <div class="idea-block"><h3><span data-zh>职业与长期学习</span><span data-en>Work & Long-term Learning</span></h3><p data-zh>关注专业能力如何长期积累、经验如何转化为判断，以及 AI 时代知识工作正在发生的结构性变化。</p><p data-en>How professional capability compounds, how experience becomes judgment, and how knowledge work is being structurally reshaped in the AI era.</p></div>
+        </div>
+        <div class="question-list">
+          <div class="question"><div class="qmark" aria-hidden="true">Q</div><div><span data-zh>一个复杂产品进入不同市场后，真正需要改变的是什么？</span><span data-en>What actually needs to change when a complex product enters different markets?</span></div></div>
+          <div class="question"><div class="qmark" aria-hidden="true">Q</div><div><span data-zh>国际化与本地化如何从交付动作，变成产品能力的一部分？</span><span data-en>How do internationalization and localization become product capabilities rather than downstream delivery tasks?</span></div></div>
+          <div class="question"><div class="qmark" aria-hidden="true">Q</div><div><span data-zh>AI 会怎样重新定义专业人士的工作方式与能力边界？</span><span data-en>How will AI redefine the way professionals work and the boundaries of individual capability?</span></div></div>
+          <div class="question"><div class="qmark" aria-hidden="true">Q</div><div><span data-zh>汽车软件如何同时保持全球一致性与本地市场适配？</span><span data-en>How can automotive software maintain global consistency while adapting to local markets?</span></div></div>
+          <div class="question"><div class="qmark" aria-hidden="true">Q</div><div><span data-zh>一段 20 多年的职业经历，哪些能力真正会复利？</span><span data-en>Across a 20-plus-year career, which capabilities truly compound?</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="speaking">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">06 / <span data-zh>演讲与交流</span><span data-en>Speaking</span></div>
+          <div>
+            <h2 data-zh>把实践、框架与案例放到同一场讨论里</h2>
+            <h2 data-en>Bringing practice, frameworks and cases into the same conversation</h2>
+          </div>
+        </div>
+        <div class="speaking-grid">
+          <div>
+            <p class="speaking-intro" data-zh>面向高校、行业会议、作者活动、专业社群与企业内部交流。</p>
+            <p class="speaking-intro" data-en>Available for universities, industry conferences, author events, professional communities and internal company sessions.</p>
+            <p class="speaking-copy" data-zh>主题可根据听众背景与活动目标调整，但始终坚持一个原则：框架来自实践，也必须回到实践中接受检验。</p>
+            <p class="speaking-copy" data-en>Topics can be adapted to the audience and event context, with one principle kept constant: frameworks should come from practice and return to practice for validation.</p>
+          </div>
+          <div class="topics">
+            <div class="topic"><strong><span data-zh>从“走出去”到“走下去”</span><span data-en>From entering overseas markets to staying and operating in-market</span></strong><span><span data-zh>企业全球拓展 · GoxEDGE</span><span data-en>Global expansion · GoxEDGE</span></span></div>
+            <div class="topic"><strong><span data-zh>全球产品如何跨越不同市场</span><span data-en>How global products work across different markets</span></strong><span><span data-zh>产品 · 国际化 · 本地化</span><span data-en>Product · Internationalization · Localization</span></span></div>
+            <div class="topic"><strong><span data-zh>汽车软件中的全球一致性与本地适配</span><span data-en>Global consistency and local adaptation in automotive software</span></strong><span><span data-zh>汽车科技 · 导航与地图 · 产品管理</span><span data-en>Automotive · Navigation & maps · Product management</span></span></div>
+            <div class="topic"><strong><span data-zh>AI 时代的专业工作与知识资产</span><span data-en>Professional work and knowledge assets in the AI era</span></strong><span><span data-zh>AI · 专业能力 · 长期学习</span><span data-en>AI · Professional capability · Long-term learning</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="media">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">07 / <span data-zh>媒体资料</span><span data-en>Media</span></div>
+          <div>
+            <h2 data-zh>供出版、媒体与活动使用的标准资料</h2>
+            <h2 data-en>Standard materials for publishing, media and events</h2>
+            <p class="sublede" data-zh>可用于出版物作者介绍、媒体采访、活动主持人介绍、演讲邀请与专业合作沟通。</p>
+            <p class="sublede" data-en>For author introductions, publishing, interviews, event hosting, speaking invitations and professional inquiries.</p>
+          </div>
+        </div>
+        <div class="media-grid">
+          <div>
+            <div class="bio-box">
+              <h3><span data-zh>中文短简介</span><span data-en>Short Bio</span></h3>
+              <p data-zh>何敏（Darren He），北京大学光华管理学院 MBA，《出海新势力：GoxEDGE全球拓展战略模型》作者。拥有 20 多年全球产品、国际化与本地化相关经验，持续参与跨市场产品规划、区域适配与全球业务协同，职业实践覆盖科技服务、数字业务与汽车软件。</p>
+              <p data-en>Darren He is a product manager and author with more than 20 years of experience in global products, internationalization and localization. His work spans technology services, digital business and automotive software, with sustained involvement in cross-market product planning, regional adaptation and global collaboration. He holds an MBA from Peking University's Guanghua School of Management.</p>
+            </div>
+            <div class="bio-box">
+              <h3><span data-zh>中文长简介</span><span data-en>Extended Bio</span></h3>
+              <p data-zh>何敏（Darren He），北京大学光华管理学院 MBA，GoxEDGE 全球拓展战略模型提出者。拥有 20 多年全球产品、国际化与本地化相关经验，持续参与跨市场产品规划、市场适配与全球业务协同。曾参与多家全球科技企业的产品国际化与本地化实践，并持续参与汽车、科技等行业面向海外市场的产品规划、区域适配与跨市场协同。聚焦企业从“走出去”到“走下去”过程中面临的战略判断、路径设计、产品全球化、市场适配与组织承接问题，致力于将实践、观察与研究沉淀为系统、可应用的方法框架。</p>
+              <p data-en>Darren He is an MBA graduate of Peking University's Guanghua School of Management and the creator of the GoxEDGE global expansion strategy model. With more than two decades of experience in global products, internationalization and localization, he has worked across cross-market product planning, market adaptation and global business collaboration. His experience includes product internationalization and localization programs for global technology companies, as well as product planning, regional adaptation and cross-market collaboration in automotive and technology sectors. His work focuses on the strategic choices, expansion paths, product globalization, market adaptation and organizational capabilities required for companies to move from entering overseas markets to operating in them sustainably.</p>
+            </div>
+          </div>
+          <div class="media-list">
+            <div class="media-row"><b><span data-zh>姓名</span><span data-en>Name</span></b><span><span data-zh>何敏 · Darren He</span><span data-en>Darren He</span></span></div>
+            <div class="media-row"><b><span data-zh>作者照片</span><span data-en>Portrait</span></b><span><span data-zh>专业肖像 · 可提供高分辨率版本</span><span data-en>Professional portrait · high-resolution version available</span></span></div>
+            <div class="media-row"><b><span data-zh>著作</span><span data-en>Book</span></b><span><span data-zh>《出海新势力：GoxEDGE全球拓展战略模型》</span><span data-en><em>GoxEDGE: Global Expansion Strategy Model</em></span></span></div>
+            <div class="media-row"><b><span data-zh>教育</span><span data-en>Education</span></b><span><span data-zh>北京大学光华管理学院 MBA</span><span data-en>MBA, PKU Guanghua School of Management</span></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="now">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-kicker">08 / <span data-zh>近期关注</span><span data-en>Now</span></div>
+          <div>
+            <h2 data-zh>最近，我在持续追问这些问题</h2>
+            <h2 data-en>Questions I am continuing to explore</h2>
+          </div>
+        </div>
+        <div class="now-grid">
+          <p class="now-copy" data-zh>职业越往后，我越关注那些能够跨项目、跨行业、跨周期积累，并最终形成长期判断力的东西。</p>
+          <p class="now-copy" data-en>The further I go in my career, the more I value capabilities and judgment that compound across projects, industries and cycles — and eventually become durable professional judgment.</p>
+          <div class="now-list">
+            <div class="now-item"><span data-zh>AI 如何改变专业人士的工作方式</span><span data-en>How AI changes professional work</span></div>
+            <div class="now-item"><span data-zh>复杂知识如何沉淀为长期资产</span><span data-en>How complex knowledge becomes a durable asset</span></div>
+            <div class="now-item"><span data-zh>全球产品如何适配不同市场</span><span data-en>How global products adapt across markets</span></div>
+            <div class="now-item"><span data-zh>汽车软件与智能出行的持续演进</span><span data-en>The evolution of automotive software and mobility</span></div>
+            <div class="now-item"><span data-zh>职业中真正能够复利的能力</span><span data-en>The capabilities that truly compound across a career</span></div>
+            <div class="now-item"><span data-zh>写作、观察与持续学习</span><span data-en>Writing, observation and continuous learning</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap contact-grid">
+        <div class="section-head">
+          <div class="section-kicker">09 / <span data-zh>联系</span><span data-en>Contact</span></div>
+          <div>
+            <h2 data-zh>出版、采访、演讲与专业交流</h2>
+            <h2 data-en>Publishing, media, speaking & professional inquiries</h2>
+            <p class="contact-lede" data-zh>欢迎就著作、媒体采访、高校与行业活动、演讲及专业话题交流与我联系。</p>
+            <p class="contact-lede" data-en>For publishing, media, speaking, university or industry events, and professional inquiries, please use the channels below.</p>
+          </div>
+        </div>
+        <div class="contact-list">
+          <div class="contact-row"><strong>WeChat</strong><span>iseeworlds-com</span></div>
+          <div class="contact-row"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/darren-iseeworlds" target="_blank" rel="noopener">www.linkedin.com/in/darren-iseeworlds</a></div>
+          <div class="contact-row"><strong>Email</strong><a href="mailto:darren.he@iseeworlds.com">darren.he@iseeworlds.com</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer">
+      <div class="footer-person">
+        <img src="assets/darren-portrait-480.webp" width="480" height="617" loading="lazy" decoding="async" alt="Darren He" />
+        <div><strong data-zh>何敏 · Darren He</strong><strong data-en>Darren He</strong><br/><span data-zh>新见界 · iSeeWorlds</span><span data-en>iSeeWorlds</span></div>
+      </div>
+      <div class="footer-note">
+        <div><span data-zh>© <span class="copyright-year">2026</span> 何敏 · Darren He | 新见界 · iSeeWorlds</span><span data-en>© <span class="copyright-year">2026</span> Darren He | iSeeWorlds</span></div>
+        <div><span data-zh>个人网站 · 本站内容仅代表个人观点</span><span data-en>Personal website · Views expressed here are my own</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const body=document.body;
+    const zhBtn=document.getElementById('zhBtn');
+    const enBtn=document.getElementById('enBtn');
+    const menuToggle=document.getElementById('menuToggle');
+    const mobileMenu=document.getElementById('mobileMenu');
+
+    function setLang(lang){
+      body.classList.toggle('lang-zh',lang==='zh');
+      body.classList.toggle('lang-en',lang==='en');
+      zhBtn.classList.toggle('active',lang==='zh');
+      enBtn.classList.toggle('active',lang==='en');
+      zhBtn.setAttribute('aria-pressed',String(lang==='zh'));
+      enBtn.setAttribute('aria-pressed',String(lang==='en'));
+      document.documentElement.lang=lang==='zh'?'zh-CN':'en';
+      document.title=lang==='zh'?'新见界 · iSeeWorlds | 何敏 · Darren He':'iSeeWorlds | Darren He';
+      try{localStorage.setItem('iseeworlds-lang',lang)}catch(e){}
+    }
+
+    function closeMenu(){
+      mobileMenu.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded','false');
+    }
+
+    zhBtn.addEventListener('click',()=>setLang('zh'));
+    enBtn.addEventListener('click',()=>setLang('en'));
+    menuToggle.addEventListener('click',()=>{
+      const open=mobileMenu.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded',String(open));
+    });
+    mobileMenu.querySelectorAll('a').forEach(link=>link.addEventListener('click',closeMenu));
+    document.querySelectorAll('.copyright-year').forEach(el=>el.textContent=String(new Date().getFullYear()));
+    try{const saved=localStorage.getItem('iseeworlds-lang');if(saved==='en')setLang('en')}catch(e){}
+  </script>
+</body>
+</html>
