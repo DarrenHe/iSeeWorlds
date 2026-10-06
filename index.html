@@ -192,11 +192,14 @@
     .role-row p{font-size:14.2px;color:#45515b;margin:0;line-height:1.8}
     .career-note{margin-top:25px;padding:22px 24px;background:linear-gradient(135deg,#ffffff 0%,#f4f9fc 100%);border:1px solid #d7e4ec;border-left:3px solid var(--accent);border-radius:8px;font-size:13.5px;color:#425667}
 
-    .focus-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .focus-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
     .focus-card{background:var(--surface);border:1px solid #d9e4eb;padding:25px;min-height:180px;border-radius:10px;box-shadow:0 8px 26px rgba(24,56,82,.045)}
     .focus-card .num{font-size:10px;color:var(--accent);font-weight:700;letter-spacing:.12em}
     .focus-card h3{font-size:17px;margin:18px 0 9px;font-weight:650}
     .focus-card p{font-size:13px;color:var(--muted);margin:0}
+    .focus-card a{display:inline-block;margin-top:14px;font-size:12.5px;font-weight:650;color:var(--accent)}
+    .focus-card a:hover{text-decoration:underline}
+    .evidence-note{margin:22px 0 0;font-size:13px;line-height:1.75;color:#66798a}
 
     .book-shell{display:grid;grid-template-columns:.78fr 1.22fr;border:1px solid #d6e1e8;background:var(--surface);border-radius:12px;overflow:hidden;box-shadow:0 14px 44px rgba(22,53,77,.06)}
     .book-side{display:flex;align-items:center;justify-content:center;padding:46px;background:linear-gradient(145deg,#e8f0f5 0%,#f3eee7 100%)}
@@ -287,8 +290,7 @@
       .portrait-wrap{margin:0;max-width:350px;width:56%}
       .section-head{gap:10px}
       .role-row{grid-template-columns:135px 210px 1fr}
-      .focus-grid{grid-template-columns:1fr 1fr}
-      .focus-card:last-child{grid-column:1 / -1}
+      .focus-grid{grid-template-columns:1fr}
     }
     @media(max-width:700px){
       .wrap{padding:0 22px}
@@ -477,20 +479,44 @@
     <section id="focus">
       <div class="wrap">
         <div class="section-head">
-          <div class="section-kicker">03 / <span data-zh>专业聚焦</span><span data-en>Professional Focus</span></div>
+          <div class="section-kicker">03 / <span data-zh>代表实践与证据</span><span data-en>Selected Work & Evidence</span></div>
           <div>
-            <h2 data-zh>六个彼此连接、持续积累的专业关注</h2>
-            <h2 data-en>Six connected areas of long-term professional focus</h2>
+            <h2 data-zh>这些判断，来自长期跨市场实践</h2>
+            <h2 data-en>The work behind the point of view</h2>
+            <p class="sublede" data-zh>这里不试图罗列全部职业经历，而是选择几类能够解释当前专业关注与写作来源的实践：直接职业经历、全球科技项目、汽车产品的跨市场工作，以及把长期经验转化为书籍与方法的过程。</p>
+            <p class="sublede" data-en>Rather than listing every role or project, this section highlights a few strands of work that help explain the professional perspective behind this site: direct career experience, global technology programs, cross-market automotive product work, and the codification of long practice into a book and method.</p>
           </div>
         </div>
         <div class="focus-grid">
-          <div class="focus-card"><div class="num">01</div><h3><span data-zh>全球产品与产品规划</span><span data-en>Global Product & Planning</span></h3><p data-zh>从用户需求与市场差异出发，连接产品规划、版本演进与区域落地，关注复杂产品如何跨市场持续运行。</p><p data-en>Connecting user needs and market differences with roadmaps, releases and regional execution, with a focus on how complex products continue to work across markets.</p></div>
-          <div class="focus-card"><div class="num">02</div><h3><span data-zh>国际化与本地化</span><span data-en>Internationalization & Localization</span></h3><p data-zh>把语言、文化、规则、数据与市场差异前置到产品设计与交付体系，而不是把本地化留到最后一步。</p><p data-en>Bringing language, culture, rules, data and market differences into the product and delivery system — not treating localization as the final step.</p></div>
-          <div class="focus-card"><div class="num">03</div><h3><span data-zh>汽车软件与导航</span><span data-en>Automotive Software & Navigation</span></h3><p data-zh>围绕车载导航、地图数据、多区域产品与功能协同，处理汽车软件在真实市场中的复杂性。</p><p data-en>Working across in-vehicle navigation, map data, multi-region products and feature coordination in real-world automotive software environments.</p></div>
-          <div class="focus-card"><div class="num">04</div><h3><span data-zh>跨市场协同</span><span data-en>Cross-market Collaboration</span></h3><p data-zh>在团队、客户、区域与合作伙伴之间建立共同判断，并推动需求、产品与交付形成闭环。</p><p data-en>Building shared judgment across teams, customers, regions and partners, then carrying it through requirements, product decisions and delivery.</p></div>
-          <div class="focus-card"><div class="num">05</div><h3><span data-zh>方法化与知识沉淀</span><span data-en>Knowledge Codification</span></h3><p data-zh>把长期实践中的经验与判断转化为文章、框架与书籍，使其能够被讨论、验证并持续复用。</p><p data-en>Turning accumulated experience and judgment into writing, frameworks and books that can be discussed, tested and reused over time.</p></div>
-          <div class="focus-card"><div class="num">06</div><h3><span data-zh>AI 与专业工作</span><span data-en>AI & Professional Work</span></h3><p data-zh>持续关注 AI 如何改变知识工作的边界、产品实践的方法，以及专业能力的形成方式。</p><p data-en>Exploring how AI changes the boundaries of knowledge work, the practice of building products and the way professional capability develops.</p></div>
+          <div class="focus-card">
+            <div class="num">01 / CAREER</div>
+            <h3><span data-zh>跨越几类不同产品与业务环境</span><span data-en>Across different product and business environments</span></h3>
+            <p data-zh>直接职业经历包括 Moravia（RWS Moravia）、HP、Newsoft、Active Network 与 Telenav，横跨国际化与本地化、数字业务与运营，以及汽车导航与全球产品。行业和岗位环境不断变化，但长期处理的问题相对一致：产品如何跨越市场差异真正运行。</p>
+            <p data-en>Direct career experience includes Moravia (RWS Moravia), HP, Newsoft, Active Network and Telenav, spanning internationalization and localization, digital business and operations, and automotive navigation and global products. The settings changed, but the underlying question remained similar: how products continue to work across different markets.</p>
+            <a href="#experience"><span data-zh>查看职业履历 →</span><span data-en>View career chapters →</span></a>
+          </div>
+          <div class="focus-card">
+            <div class="num">02 / PROGRAMS</div>
+            <h3><span data-zh>在真实全球产品项目中理解市场差异</span><span data-en>Learning market differences through real global programs</span></h3>
+            <p data-zh>职业实践中参与过服务 Microsoft、Agilent、Amazon 等全球科技企业的相关项目，也参与过与 HP 相关的项目工作。这些名称表示客户或项目对象，并不代表在 Microsoft、Agilent 或 Amazon 任职。相关实践强化了对产品国际化、本地化、跨团队交付与全球协作的理解。</p>
+            <p data-en>Professional work has included projects and programs serving Microsoft, Agilent and Amazon, as well as project work involving HP. These names refer to clients or program contexts, not employment at Microsoft, Agilent or Amazon. The work contributed to a practical understanding of product internationalization, localization, cross-team delivery and global collaboration.</p>
+          </div>
+          <div class="focus-card">
+            <div class="num">03 / AUTOMOTIVE</div>
+            <h3><span data-zh>把全球一致性与区域适配放进同一个产品体系</span><span data-en>Balancing global consistency with regional adaptation</span></h3>
+            <p data-zh>在汽车导航、地图与车载软件相关工作中，持续参与多区域产品规划、区域适配、地图与数据差异、功能协同以及跨市场产品推进。汽车产品的复杂性，使“全球统一”和“本地差异”不再只是理念，而成为每天都需要处理的产品判断。</p>
+            <p data-en>Work in automotive navigation, maps and in-vehicle software includes multi-region product planning, regional adaptation, map and data differences, feature coordination and cross-market product execution. In automotive products, the tension between global consistency and local variation is not abstract — it becomes part of everyday product judgment.</p>
+          </div>
+          <div class="focus-card">
+            <div class="num">04 / BOOK &amp; METHOD</div>
+            <h3><span data-zh>把经验整理成可以被讨论和检验的方法</span><span data-en>Turning experience into a method that can be discussed and tested</span></h3>
+            <p data-zh>《出海新势力：GoxEDGE全球拓展战略模型》是对长期实践、案例观察与相关研究的一次系统整理，将战略判断、EDGE 四大能力、六阶段路径与认知—行动—反馈放进同一套全球拓展逻辑中。书籍尚未正式上市，将由机械工业出版社出版。</p>
+            <p data-en>GoxEDGE: Global Expansion Strategy Model is a structured attempt to organize long-term practice, case observation and related research into one global expansion logic — connecting strategic judgment, four EDGE capabilities, a six-stage path and a cognition–action–feedback mechanism. The Chinese-language book is forthcoming from China Machine Press.</p>
+            <a href="https://goxedge.com/?utm_source=iseeworlds&amp;utm_medium=referral&amp;utm_campaign=evidence_section" target="_blank" rel="noopener noreferrer"><span data-zh>查看《出海新势力》与 GoxEDGE →</span><span data-en>Explore the book and GoxEDGE →</span></a>
+          </div>
         </div>
+        <p class="evidence-note" data-zh>以上内容用于说明专业经历与写作之间的来源关系，并不是对任何客户、企业或项目成果的完整展示。部分职业项目受到保密约束，因此本站只保留能够公开且与个人专业主线直接相关的信息。</p>
+        <p class="evidence-note" data-en>These examples are intended to show how professional experience connects to the ideas and writing on this site, not to provide a complete record of client or project outcomes. Some professional work is subject to confidentiality, so only information suitable for public disclosure is included here.</p>
       </div>
     </section>
 
