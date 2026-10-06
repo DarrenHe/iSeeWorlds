@@ -241,6 +241,19 @@
     .topic{padding:16px 0;border-bottom:1px solid var(--line)}
     .topic strong{display:block;font-size:14px;margin-bottom:3px}
     .topic span{font-size:12px;color:var(--muted)}
+    .topic-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+    .topic-card{background:var(--surface);border:1px solid #d9e4eb;border-radius:10px;padding:22px 24px;min-width:0}
+    .topic-card h3{font-size:17px;line-height:1.4;margin:8px 0 10px;font-weight:650}
+    .topic-card p{margin:0 0 8px;font-size:13px;line-height:1.65;color:#44505a}
+    .topic-card b{font-weight:700;color:#1d6aa5}
+    .block-label{margin:36px 0 8px;font-size:15px;font-weight:650;color:#1d6aa5}
+    .format-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;margin-top:8px}
+    .format-card{border-top:2px solid #183c58;padding-top:14px;min-width:0}
+    .format-card h3{font-size:16px;margin:6px 0 8px;font-weight:650}
+    .format-card p{margin:0;font-size:13px;line-height:1.65;color:#44505a}
+    .audience-list{margin:8px 0 0;padding:0;list-style:none}
+    .audience-list li{padding:10px 0;border-bottom:1px solid var(--line);font-size:14px;color:#38444e}
+    .speaking-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
 
     .media-grid{display:grid;grid-template-columns:1.04fr .96fr;gap:40px}
     .bio-box{background:var(--surface);border:1px solid #d9e4eb;padding:27px;border-radius:10px}
@@ -295,7 +308,7 @@
       .portrait-wrap{margin:0;max-width:350px;width:56%}
       .section-head{gap:10px}
       .role-row{grid-template-columns:135px 210px 1fr}
-      .focus-grid,.ideas-grid{grid-template-columns:1fr}
+      .focus-grid,.ideas-grid,.topic-grid,.format-grid{grid-template-columns:1fr}
     }
     @media(max-width:700px){
       .wrap{padding:0 22px}
@@ -313,7 +326,7 @@
       section{padding:61px 0}
       h2{font-size:32px}
       .role-row{grid-template-columns:1fr;gap:7px;padding:23px 0}
-      .focus-grid,.ideas-grid{grid-template-columns:1fr}
+      .focus-grid,.ideas-grid,.topic-grid,.format-grid{grid-template-columns:1fr}
       .focus-card:last-child{grid-column:auto}
       .book-side{padding:34px 20px}
       .book-copy{padding:32px 27px}
@@ -624,23 +637,75 @@
         <div class="section-head">
           <div class="section-kicker">06 / <span data-zh>演讲与交流</span><span data-en>Speaking</span></div>
           <div>
-            <h2 data-zh>把实践、框架与案例放到同一场讨论里</h2>
-            <h2 data-en>Bringing practice, frameworks and cases into the same conversation</h2>
+            <h2 data-zh>围绕全球产品、跨市场实践与全球经营展开讨论</h2>
+            <h2 data-en>Conversations on global products, cross-market work and global expansion</h2>
+            <p class="sublede" data-zh>适合高校、行业会议、作者活动、专业社群与企业内部交流。主题可根据听众背景调整，但内容始终围绕真实实践、方法框架与可讨论的问题展开。</p>
+            <p class="sublede" data-en>For universities, industry conferences, author events, professional communities and internal company sessions. Topics can be adjusted to the audience. The content stays with real practice, usable frameworks and questions that can actually be discussed.</p>
           </div>
         </div>
-        <div class="speaking-grid">
-          <div>
-            <p class="speaking-intro" data-zh>面向高校、行业会议、作者活动、专业社群与企业内部交流。</p>
-            <p class="speaking-intro" data-en>Available for universities, industry conferences, author events, professional communities and internal company sessions.</p>
-            <p class="speaking-copy" data-zh>主题可根据听众背景与活动目标调整，但始终坚持一个原则：框架来自实践，也必须回到实践中接受检验。</p>
-            <p class="speaking-copy" data-en>Topics can be adapted to the audience and event context, with one principle kept constant: frameworks should come from practice and return to practice for validation.</p>
-          </div>
-          <div class="topics">
-            <div class="topic"><strong><span data-zh>从“走出去”到“走下去”</span><span data-en>From entering overseas markets to staying and operating in-market</span></strong><span><span data-zh>企业全球拓展 · GoxEDGE</span><span data-en>Global expansion · GoxEDGE</span></span></div>
-            <div class="topic"><strong><span data-zh>全球产品如何跨越不同市场</span><span data-en>How global products work across different markets</span></strong><span><span data-zh>产品 · 国际化 · 本地化</span><span data-en>Product · Internationalization · Localization</span></span></div>
-            <div class="topic"><strong><span data-zh>汽车软件中的全球一致性与本地适配</span><span data-en>Global consistency and local adaptation in automotive software</span></strong><span><span data-zh>汽车科技 · 导航与地图 · 产品管理</span><span data-en>Automotive · Navigation & maps · Product management</span></span></div>
-            <div class="topic"><strong><span data-zh>AI 时代的专业工作与知识资产</span><span data-en>Professional work and knowledge assets in the AI era</span></strong><span><span data-zh>AI · 专业能力 · 长期学习</span><span data-en>AI · Professional capability · Long-term learning</span></span></div>
-          </div>
+        <div class="topic-grid">
+          <article class="topic-card">
+            <div class="note-kicker"><span data-zh>全球拓展 · GoxEDGE</span><span data-en>Global expansion · GoxEDGE</span></div>
+            <h3><span data-zh>从“走出去”到“走下去”</span><span data-en>From entering overseas markets to staying and operating</span></h3>
+            <p><b><span data-zh>适合</span><span data-en>For</span></b> <span data-zh>企业管理者、国际业务负责人、MBA / EMBA / 商学院课堂、出海主题论坛</span><span data-en>Enterprise managers, international-business leads, MBA / EMBA and business-school classrooms, and forums on going overseas</span></p>
+            <p><b><span data-zh>核心问题</span><span data-en>Question</span></b> <span data-zh>企业为什么会在“已经进入海外市场”以后，才真正遇到全球经营难题？</span><span data-en>Why do the real problems of global operations often appear only after a company has already entered an overseas market?</span></p>
+            <p><b><span data-zh>内容方向</span><span data-en>Direction</span></b> <span data-zh>战略判断、起点选择、阶段推进、能力建设、总部与区域协同</span><span data-en>Strategic judgment, starting point, staged progress, capability building, and coordination between headquarters and regions</span></p>
+            <p><b><span data-zh>建议形式</span><span data-en>Format</span></b> <span data-zh>主题演讲、圆桌讨论、课堂分享</span><span data-en>Talk, roundtable, classroom session</span></p>
+          </article>
+          <article class="topic-card">
+            <div class="note-kicker"><span data-zh>产品 · 国际化 · 本地化</span><span data-en>Product · Internationalization · Localization</span></div>
+            <h3><span data-zh>全球产品如何跨越不同市场</span><span data-en>How global products work across different markets</span></h3>
+            <p><b><span data-zh>适合</span><span data-en>For</span></b> <span data-zh>产品团队、国际化团队、本地化团队、技术与交付团队、高校相关专业</span><span data-en>Product, internationalization, localization, technology and delivery teams, and related university programs</span></p>
+            <p><b><span data-zh>核心问题</span><span data-en>Question</span></b> <span data-zh>一个复杂产品进入不同市场以后，什么应该保持稳定，什么必须改变？</span><span data-en>After a complex product enters different markets, what should stay stable, and what has to change?</span></p>
+            <p><b><span data-zh>内容方向</span><span data-en>Direction</span></b> <span data-zh>产品内核、区域差异、国际化设计、本地适配、跨市场协同</span><span data-en>Product core, regional difference, internationalization in design, local adaptation, and cross-market collaboration</span></p>
+            <p><b><span data-zh>建议形式</span><span data-en>Format</span></b> <span data-zh>主题演讲、专业分享、案例讨论</span><span data-en>Talk, professional session, discussion of cases</span></p>
+          </article>
+          <article class="topic-card">
+            <div class="note-kicker"><span data-zh>汽车科技 · 导航与地图 · 产品管理</span><span data-en>Automotive · Navigation &amp; maps · Product management</span></div>
+            <h3><span data-zh>汽车软件中的全球一致性与本地适配</span><span data-en>Global consistency and local adaptation in automotive software</span></h3>
+            <p><b><span data-zh>适合</span><span data-en>For</span></b> <span data-zh>汽车软件、智能座舱、导航地图、全球产品团队、汽车产业相关院校</span><span data-en>Automotive software, intelligent cockpit, navigation and maps, global product teams, and related university programs</span></p>
+            <p><b><span data-zh>核心问题</span><span data-en>Question</span></b> <span data-zh>汽车软件如何在全球一致性、地区规则、数据差异和本地用户需求之间建立边界？</span><span data-en>How can automotive software draw a boundary among global consistency, regional rules, data differences and local user needs?</span></p>
+            <p><b><span data-zh>内容方向</span><span data-en>Direction</span></b> <span data-zh>导航与地图、区域产品、数据条件、功能协同、全球与本地产品判断</span><span data-en>Navigation and maps, regional products, data conditions, feature coordination, and global versus local product judgment</span></p>
+            <p><b><span data-zh>建议形式</span><span data-en>Format</span></b> <span data-zh>主题演讲、专业分享、课堂讨论</span><span data-en>Talk, professional session, classroom discussion</span></p>
+          </article>
+          <article class="topic-card">
+            <div class="note-kicker"><span data-zh>AI · 专业能力 · 长期学习</span><span data-en>AI · Professional capability · Long-term learning</span></div>
+            <h3><span data-zh>AI 时代的专业工作与知识资产</span><span data-en>Professional work and knowledge assets in the AI era</span></h3>
+            <p><b><span data-zh>适合</span><span data-en>For</span></b> <span data-zh>专业人士、管理者、高校学生、知识工作者、小型专业团队</span><span data-en>Professionals, managers, university students, knowledge workers, and small professional teams</span></p>
+            <p><b><span data-zh>核心问题</span><span data-en>Question</span></b> <span data-zh>当通用 AI 能力快速普及以后，专业人士真正需要积累的还剩什么？</span><span data-en>When general AI capability spreads quickly, what do professionals still need to accumulate?</span></p>
+            <p><b><span data-zh>内容方向</span><span data-en>Direction</span></b> <span data-zh>判断力、经验结构化、知识资产、AI 协作、长期能力复利</span><span data-en>Judgment, structuring experience, knowledge assets, working with AI, and capabilities that compound</span></p>
+            <p><b><span data-zh>建议形式</span><span data-en>Format</span></b> <span data-zh>主题演讲、课堂分享、内部讨论</span><span data-en>Talk, classroom session, internal discussion</span></p>
+          </article>
+        </div>
+        <h3 class="block-label"><span data-zh>交流形式</span><span data-en>Session Formats</span></h3>
+        <div class="format-grid">
+          <article class="format-card">
+            <div class="note-kicker">01</div>
+            <h3><span data-zh>主题演讲</span><span data-en>Keynote / Talk</span></h3>
+            <p><span data-zh>约 30–60 分钟。适合会议、论坛、作者活动和高校公开分享。</span><span data-en>About 30–60 minutes. For conferences, forums, author events and public university sessions.</span></p>
+          </article>
+          <article class="format-card">
+            <div class="note-kicker">02</div>
+            <h3><span data-zh>深度讨论</span><span data-en>Roundtable / Discussion</span></h3>
+            <p><span data-zh>约 60–90 分钟。围绕一个具体主题，与管理者、专业团队或学生进行问题驱动的讨论。</span><span data-en>About 60–90 minutes. One concrete topic, discussed with managers, a professional team or students through the questions it raises.</span></p>
+          </article>
+          <article class="format-card">
+            <div class="note-kicker">03</div>
+            <h3><span data-zh>课堂 / 内部分享</span><span data-en>Classroom / Internal Session</span></h3>
+            <p><span data-zh>约 60–120 分钟。适合高校课程、专业社群或企业内部学习场景，可根据听众背景调整内容深度。</span><span data-en>About 60–120 minutes. For university courses, professional communities or internal learning. Depth can be adjusted to the audience.</span></p>
+          </article>
+        </div>
+        <h3 class="block-label"><span data-zh>适合的听众</span><span data-en>Who It Is For</span></h3>
+        <ul class="audience-list">
+          <li><span data-zh>企业管理者与国际业务负责人</span><span data-en>Enterprise managers and international-business leads</span></li>
+          <li><span data-zh>产品、国际化与本地化团队</span><span data-en>Product, internationalization and localization teams</span></li>
+          <li><span data-zh>汽车科技与软件从业者</span><span data-en>People working in automotive technology and software</span></li>
+          <li><span data-zh>MBA / EMBA / MTI / 新文科等高校师生</span><span data-en>Faculty and students in MBA, EMBA, MTI and related programs</span></li>
+          <li><span data-zh>行业会议、商协会与专业社群</span><span data-en>Industry conferences, business associations and professional communities</span></li>
+        </ul>
+        <div class="speaking-actions">
+          <a class="btn primary" href="media/"><span data-zh>查看媒体与演讲资料 →</span><span data-en>View the media and speaker kit →</span></a>
+          <a class="btn" href="#contact"><span data-zh>联系交流 →</span><span data-en>Get in touch →</span></a>
         </div>
       </div>
     </section>
@@ -676,6 +741,9 @@
             <div class="media-row"><b><span data-zh>方法模型</span><span data-en>Model</span></b><span><span data-zh>GoxEDGE 全球拓展战略模型</span><span data-en>GoxEDGE Global Expansion Strategy Model</span></span></div>
             <div class="media-row"><b><span data-zh>教育</span><span data-en>Education</span></b><span><span data-zh>北京大学光华管理学院 MBA</span><span data-en>MBA, Peking University's Guanghua School of Management</span></span></div>
           </div>
+        </div>
+        <div class="speaking-actions">
+          <a class="btn" href="media/"><span data-zh>查看完整媒体与演讲资料 →</span><span data-en>View the full media and speaker kit →</span></a>
         </div>
       </div>
     </section>
