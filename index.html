@@ -221,10 +221,15 @@
     .book-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
     .book-actions .btn{min-height:42px}
 
-    .ideas-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-    .idea-block{padding:25px;background:var(--surface);border:1px solid #d9e4eb;border-radius:10px}
-    .idea-block h3{font-size:17px;margin:0 0 9px;font-weight:650}
+    .ideas-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+    .idea-block{padding:25px;background:var(--surface);border:1px solid #d9e4eb;border-radius:10px;min-width:0}
+    .idea-block h3{font-size:17px;margin:0 0 9px;font-weight:650;line-height:1.4}
     .idea-block p{font-size:13px;color:var(--muted);margin:0}
+    .note-kicker{font-size:10px;letter-spacing:.12em;color:var(--accent);font-weight:700;margin-bottom:12px}
+    .idea-block a{display:inline-block;margin-top:14px;font-size:12.5px;font-weight:650;color:var(--accent)}
+    .idea-block a:hover{text-decoration:underline}
+    .questions-label{margin:34px 0 0;font-size:15px;font-weight:650;color:#1d6aa5}
+    .question a:hover{text-decoration:underline}
     .question-list{margin-top:28px;border-top:2px solid #183c58}
     .question{display:grid;grid-template-columns:28px 1fr;gap:16px;align-items:start;padding:16px 0;border-bottom:1px solid var(--line);font-size:13.5px;color:#38444e}
     .question .qmark{width:24px;height:24px;border:1px solid #b9d4e8;border-radius:999px;display:flex;align-items:center;justify-content:center;font-size:9px;line-height:1;color:var(--accent);font-weight:800;letter-spacing:.04em;margin-top:1px;background:#f7fbfe}
@@ -290,7 +295,7 @@
       .portrait-wrap{margin:0;max-width:350px;width:56%}
       .section-head{gap:10px}
       .role-row{grid-template-columns:135px 210px 1fr}
-      .focus-grid{grid-template-columns:1fr}
+      .focus-grid,.ideas-grid{grid-template-columns:1fr}
     }
     @media(max-width:700px){
       .wrap{padding:0 22px}
@@ -576,24 +581,40 @@
         <div class="section-head">
           <div class="section-kicker">05 / <span data-zh>观点</span><span data-en>Ideas</span></div>
           <div>
-            <h2 data-zh>不追逐短期话题，持续追问那些真正影响产品与经营结果的问题</h2>
-            <h2 data-en>Questions worth returning to after the headlines move on</h2>
-            <p class="sublede" data-zh>这里记录我对产品、技术、全球市场与职业实践的长期观察，也保留那些需要在真实世界里反复验证的判断。</p>
-            <p class="sublede" data-en>This is where I write about products, technology, global markets and professional practice — and return to judgments that need to be tested repeatedly in the real world.</p>
+            <h2 data-zh>一些值得反复验证的判断</h2>
+            <h2 data-en>Ideas worth testing against the real world</h2>
+            <p class="sublede" data-zh>这里不是对热点的即时评论，而是一些从长期产品与跨市场实践中形成、仍需要在真实世界里继续检验的判断。</p>
+            <p class="sublede" data-en>These are not comments on the week's headlines. They are judgments formed through long practice in products and cross-market work, and they still need to be tested in the real world.</p>
           </div>
         </div>
         <div class="ideas-grid">
-          <div class="idea-block"><h3><span data-zh>产品与技术</span><span data-en>Product & Technology</span></h3><p data-zh>关注复杂产品、AI、软件与用户体验，以及技术如何真正转化为可感知的用户价值。</p><p data-en>Complex products, AI, software and user experience — and how technology becomes value that users can actually perceive.</p></div>
-          <div class="idea-block"><h3><span data-zh>全球市场与跨文化</span><span data-en>Global Markets & Cross-cultural Work</span></h3><p data-zh>关注国际化、本地化、制度与文化差异，以及产品跨市场持续运行所需要的真实条件。</p><p data-en>Internationalization, localization, institutional and cultural differences, and the conditions required for products to keep working across markets.</p></div>
-          <div class="idea-block"><h3><span data-zh>汽车与智能出行</span><span data-en>Automotive & Mobility</span></h3><p data-zh>关注导航、地图、车载软件、数据与区域产品，以及汽车软件与智能出行持续发生的变化。</p><p data-en>Navigation, maps, in-vehicle software, data and regional products, alongside the continuing evolution of automotive software and mobility.</p></div>
-          <div class="idea-block"><h3><span data-zh>职业与长期学习</span><span data-en>Work & Long-term Learning</span></h3><p data-zh>关注专业能力如何长期积累、经验如何转化为判断，以及 AI 时代知识工作正在发生的结构性变化。</p><p data-en>How professional capability compounds, how experience becomes judgment, and how knowledge work is being structurally reshaped in the AI era.</p></div>
+          <div class="idea-block">
+            <div class="note-kicker">GLOBAL PRODUCT</div>
+            <h3><span data-zh>一个复杂产品进入不同市场后，真正需要改变的是什么？</span><span data-en>What Really Needs to Change When a Complex Product Enters a New Market?</span></h3>
+            <p data-zh>真正困难的不是列出需要本地化的功能，而是判断哪些部分必须保持稳定，哪些差异真正改变用户价值和运营条件。</p>
+            <p data-en>The hard part is not listing features to localize. It is judging what must stay stable, and which differences actually change user value and operating conditions.</p>
+            <a href="ideas/what-changes-across-markets/"><span data-zh>阅读全文 →</span><span data-en>Read the note →</span></a>
+          </div>
+          <div class="idea-block">
+            <div class="note-kicker">INTERNATIONALIZATION &amp; LOCALIZATION</div>
+            <h3><span data-zh>国际化与本地化，为什么不应该留到产品生命周期的最后一步？</span><span data-en>Why Internationalization and Localization Should Not Be the Last Step</span></h3>
+            <p data-zh>语言只是用户最后看到的一层。很多跨市场问题，其实早在架构、数据、设计和运营阶段就已经形成。</p>
+            <p data-en>Language is only the layer users see last. Many cross-market problems are already built into architecture, data, design and operations.</p>
+            <a href="ideas/localization-is-product-capability/"><span data-zh>阅读全文 →</span><span data-en>Read the note →</span></a>
+          </div>
+          <div class="idea-block">
+            <div class="note-kicker">GLOBAL × LOCAL</div>
+            <h3><span data-zh>全球一致性与本地适配，从来不是一道二选一的题</span><span data-en>Global Consistency and Local Adaptation Are Not an Either-Or Choice</span></h3>
+            <p data-zh>全球产品真正需要建立的，不是统一或本地化的固定答案，而是持续判断一致与差异边界的能力。</p>
+            <p data-en>A global product does not need a fixed answer of unify or localize. It needs the ability to keep judging where consistency ends and difference begins.</p>
+            <a href="ideas/global-consistency-local-adaptation/"><span data-zh>阅读全文 →</span><span data-en>Read the note →</span></a>
+          </div>
         </div>
+        <h3 class="questions-label"><span data-zh>持续追问的问题</span><span data-en>Questions I Keep Returning To</span></h3>
         <div class="question-list">
-          <div class="question"><div class="qmark" aria-hidden="true">Q</div><div><span data-zh>一个复杂产品进入不同市场后，真正需要改变的是什么？</span><span data-en>What actually needs to change when a complex product enters different markets?</span></div></div>
-          <div class="question"><div class="qmark" aria-hidden="true">Q</div><div><span data-zh>国际化与本地化如何从交付动作，变成产品能力的一部分？</span><span data-en>How do internationalization and localization become product capabilities rather than downstream delivery tasks?</span></div></div>
-          <div class="question"><div class="qmark" aria-hidden="true">Q</div><div><span data-zh>AI 会怎样重新定义专业人士的工作方式与能力边界？</span><span data-en>How will AI redefine the way professionals work and the boundaries of individual capability?</span></div></div>
-          <div class="question"><div class="qmark" aria-hidden="true">Q</div><div><span data-zh>汽车软件如何同时保持全球一致性与本地市场适配？</span><span data-en>How can automotive software maintain global consistency while adapting to local markets?</span></div></div>
-          <div class="question"><div class="qmark" aria-hidden="true">Q</div><div><span data-zh>一段 20 多年的职业经历，哪些能力真正会复利？</span><span data-en>Across a 20-plus-year career, which capabilities truly compound?</span></div></div>
+          <div class="question"><div class="qmark" aria-hidden="true">Q</div><div><a href="ideas/what-changes-across-markets/"><span data-zh>一个复杂产品进入不同市场后，真正需要改变的是什么？</span><span data-en>What actually needs to change when a complex product enters different markets?</span></a></div></div>
+          <div class="question"><div class="qmark" aria-hidden="true">Q</div><div><a href="ideas/localization-is-product-capability/"><span data-zh>国际化与本地化如何从交付动作，变成产品能力的一部分？</span><span data-en>How do internationalization and localization become product capabilities rather than downstream delivery tasks?</span></a></div></div>
+          <div class="question"><div class="qmark" aria-hidden="true">Q</div><div><a href="ideas/global-consistency-local-adaptation/"><span data-zh>汽车软件如何同时保持全球一致性与本地市场适配？</span><span data-en>How can automotive software maintain global consistency while adapting to local markets?</span></a></div></div>
         </div>
       </div>
     </section>
