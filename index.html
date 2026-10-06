@@ -45,10 +45,7 @@
         "alumniOf": {
           "@type": "CollegeOrUniversity",
           "name": "Peking University Guanghua School of Management"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/in/darren-iseeworlds"
-        ]
+        }
       },
       {
         "@type": "Book",
@@ -136,14 +133,15 @@
 
     .profile-strip{border-top:1px solid rgba(11,32,51,.08);border-bottom:1px solid rgba(11,32,51,.08);background:rgba(255,255,255,.52)}
     .profile-strip .wrap{max-width:var(--max);padding-left:42px;padding-right:42px}
-    .profile-grid{display:grid;grid-template-columns:max-content minmax(34px,1fr) max-content minmax(34px,1fr) max-content minmax(34px,1fr) max-content;align-items:center}
+    .profile-grid{display:grid;grid-template-columns:max-content minmax(34px,1fr) max-content minmax(34px,1fr) minmax(0,220px) minmax(34px,1fr) max-content;align-items:center}
     .profile-item{padding:23px 0;display:flex;align-items:center;justify-content:flex-start;gap:11px;min-width:0;white-space:nowrap;text-align:left}
     .profile-item:last-of-type{justify-content:flex-end;text-align:right}
     .profile-sep{width:1px;height:30px;background:rgba(17,24,32,.10);justify-self:center;align-self:center}
     .profile-item strong{display:inline;font-size:15px;line-height:1.3;font-weight:790;margin:0;color:#17344a;flex:0 0 auto}
     .profile-item span{font-size:10.4px;color:#586d7e;line-height:1.4;min-width:0;letter-spacing:-.006em}
-    .profile-item .book-one-line{white-space:nowrap;font-size:10.1px;letter-spacing:-.018em}
-    body.lang-en .profile-item .book-one-line{white-space:nowrap;font-size:9.7px}
+    .profile-item.profile-book{white-space:normal}
+    .profile-item .book-one-line{white-space:normal;font-size:10.1px;letter-spacing:-.018em}
+    body.lang-en .profile-item .book-one-line{white-space:normal;font-size:9.7px}
 
     body.lang-en{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif;font-size:15.5px;line-height:1.68}
     body.lang-en .wordmark{font-size:18px;letter-spacing:-.02em}
@@ -367,8 +365,8 @@
         <div>
           <div class="eyebrow"><span data-zh>作者 · 全球产品 · 跨市场实践</span><span data-en>Author · Global Product · Cross-market Practice</span></div>
           <h1 data-zh>何敏 · Darren He</h1><h1 data-en>Darren He</h1>
-          <p class="hero-lede" data-zh>产品经理与作者，拥有 20 多年全球产品、国际化与本地化相关经验。职业实践横跨科技服务、数字业务与汽车软件，持续参与跨市场产品规划、区域适配与全球协同。北京大学光华管理学院 MBA，《出海新势力》作者，GoxEDGE 全球拓展战略模型提出者。</p>
-          <p class="hero-lede" data-en>Darren He is a product manager and author with more than two decades of experience in global products, internationalization and localization. His work spans technology services, digital business and automotive software, with sustained involvement in cross-market product planning, regional adaptation and global collaboration. He holds an MBA from Peking University's Guanghua School of Management, is the author of the Chinese-language book <em>出海新势力</em>, and the creator of the GoxEDGE Global Expansion Strategy Model.</p>
+          <p class="hero-lede" data-zh>产品经理与作者，拥有 20 多年全球产品、国际化与本地化相关经验。北京大学光华管理学院 MBA，《出海新势力：GoxEDGE全球拓展战略模型》作者。</p>
+          <p class="hero-lede" data-en>Darren He is a product leader and author with more than two decades of experience in global products, internationalization and localization. He holds an MBA from Peking University's Guanghua School of Management and is the author of GoxEDGE: Global Expansion Strategy Model.</p>
           <div class="tagline">
             <strong data-zh>看见新世界，看见新可能</strong>
             <strong data-en>I See Worlds. I See Possibilities.</strong>
@@ -389,9 +387,9 @@
         <div class="wrap profile-grid">
           <div class="profile-item"><strong data-zh>20+ 年</strong><strong data-en>20+ Years</strong><span data-zh>全球产品、国际化与本地化相关经验</span><span data-en>Global product · localization</span></div>
           <span class="profile-sep" aria-hidden="true"></span>
-          <div class="profile-item"><strong>MBA</strong><span data-zh>北京大学光华管理学院</span><span data-en>PKU Guanghua</span></div>
+          <div class="profile-item"><strong>MBA</strong><span data-zh>北京大学光华管理学院</span><span data-en>Guanghua School of Management</span></div>
           <span class="profile-sep" aria-hidden="true"></span>
-          <div class="profile-item"><strong data-zh>作者</strong><strong data-en>Author</strong><span class="book-one-line" data-zh>《出海新势力》</span><span class="book-one-line" data-en><em>出海新势力</em></span></div>
+          <div class="profile-item profile-book"><strong data-zh>作者</strong><strong data-en>Author</strong><span class="book-one-line" data-zh>《出海新势力：GoxEDGE全球拓展战略模型》</span><span class="book-one-line" data-en>GoxEDGE: Global Expansion Strategy Model</span></div>
           <span class="profile-sep" aria-hidden="true"></span>
           <div class="profile-item"><strong data-zh>专业主线</strong><strong data-en>Core Practice</strong><span data-zh>全球化与本地化 · 数字业务与运营 · 汽车产品与全球市场</span><span data-en>Global product · digital ops · automotive · cross-market</span></div>
         </div>
@@ -413,19 +411,19 @@
           <div class="prose" data-zh>
             <p>过去二十多年，我的职业实践持续围绕一个问题展开：一个复杂产品，如何跨越语言、文化、市场与组织边界，仍然保持可用、可运营、可规模化。</p>
             <p>从全球科技产品的国际化与本地化，到数字业务与运营，再到汽车导航与地图产品管理，我逐步形成的不是单点经验，而是一种跨市场看产品的工作方式：把战略、用户、数据、规则、组织和交付放在同一个系统中判断。</p>
-            <p>写作让我把这些经验进一步结构化。《出海新势力》是一次阶段性的系统整理，其中提出并展开了 GoxEDGE 全球拓展战略模型。iSeeWorlds 是我的长期个人主页，记录职业实践、产品与技术观察、写作，以及那些值得持续追问的问题。</p>
+            <p>这些阶段能够连成一条线，是因为它们反复处理同一个问题：产品跨过语言、文化、市场与组织边界之后，还能否继续运行。写作是把这条线索说清楚的方式。《出海新势力：GoxEDGE全球拓展战略模型》是对这些长期实践的一次阶段性整理。iSeeWorlds 是我的长期个人主页，记录职业实践、产品与技术观察、写作，以及那些值得持续追问的问题。</p>
           </div>
           <div class="prose" data-en>
             <p>For more than two decades, my work has revolved around one recurring question: how can a complex product cross language, cultural, market and organizational boundaries while remaining usable, operable and scalable?</p>
             <p>From internationalization and localization of global technology products, to digital business and operations, and later automotive navigation and maps, I developed a cross-market way of working that considers strategy, users, data, rules, organization and delivery as one system.</p>
-            <p>Writing is how I make that experience explicit. <em>出海新势力</em> is a structured account of that work and sets out the GoxEDGE Global Expansion Strategy Model. iSeeWorlds is my long-term personal home for professional experience, observations on products and technology, writing, and questions worth continuing to explore.</p>
+            <p>These chapters connect because they keep returning to the same question: after a product crosses language, cultural, market and organizational boundaries, can it keep working? Writing is how that thread becomes explicit. GoxEDGE: Global Expansion Strategy Model is a structured account of that long practice. iSeeWorlds is my long-term personal home for professional experience, observations on products and technology, writing, and questions worth continuing to explore.</p>
           </div>
           <div class="facts">
-            <div class="fact"><b><span data-zh>教育</span><span data-en>Education</span></b><span><span data-zh>北京大学光华管理学院 MBA</span><span data-en>MBA, PKU Guanghua School of Management</span></span></div>
+            <div class="fact"><b><span data-zh>教育</span><span data-en>Education</span></b><span><span data-zh>北京大学光华管理学院 MBA</span><span data-en>MBA, Peking University's Guanghua School of Management</span></span></div>
             <div class="fact"><b><span data-zh>职业领域</span><span data-en>Domains</span></b><span><span data-zh>全球产品 · 国际化与本地化 · 汽车导航与地图</span><span data-en>Global product · Internationalization & localization · Automotive navigation & maps</span></span></div>
-            <div class="fact"><b><span data-zh>代表经历</span><span data-en>Career</span></b><span>Newsoft · HP · Moravia · Active Network · Telenav</span></div>
-            <div class="fact"><b><span data-zh>相关项目</span><span data-en>Selected Programs</span></b><span><span data-zh>曾参与 Microsoft、HP、Agilent、Amazon 等全球科技企业相关项目，并持续参与多家中国汽车品牌面向海外市场的产品规划、区域适配与跨市场协同</span><span data-en>Contributed to programs involving Microsoft, HP, Agilent and Amazon, and continues to work across overseas-market product planning, regional adaptation and cross-market collaboration for Chinese automotive brands</span></span></div>
-            <div class="fact"><b><span data-zh>出版</span><span data-en>Book</span></b><span><span data-zh>《出海新势力》</span><span data-en><em>出海新势力</em>, Chinese-language book</span></span></div>
+            <div class="fact"><b><span data-zh>代表经历</span><span data-en>Career</span></b><span><span data-zh>Moravia（RWS Moravia） · HP · Newsoft · Active Network · Telenav</span><span data-en>Moravia (RWS Moravia) · HP · Newsoft · Active Network · Telenav</span></span></div>
+            <div class="fact"><b><span data-zh>相关项目</span><span data-en>Selected Programs</span></b><span><span data-zh>参与服务 Microsoft、Agilent、Amazon 等全球科技企业的相关项目，并参与过与 HP 相关的项目工作。这些名称表示客户或项目对象，不表示曾任职 Microsoft、Agilent 或 Amazon。HP 作为直接职业经历，见职业履历。同时持续参与多家中国汽车品牌面向海外市场的产品规划、区域适配与跨市场协同。</span><span data-en>Projects and programs serving Microsoft, Agilent and Amazon, and project work involving HP. These names refer to clients or programs, not employment at Microsoft, Agilent or Amazon. HP as a direct career chapter is listed in Experience. Also includes ongoing overseas-market product planning, regional adaptation and cross-market collaboration for Chinese automotive brands.</span></span></div>
+            <div class="fact"><b><span data-zh>著作</span><span data-en>Book</span></b><span><span data-zh>《出海新势力：GoxEDGE全球拓展战略模型》</span><span data-en>GoxEDGE: Global Expansion Strategy Model</span></span></div>
           </div>
         </div>
       </div>
@@ -446,11 +444,11 @@
           <div class="role-row">
             <div class="phase"><span data-zh>全球化与本地化</span><span data-en>Globalization & Localization</span></div>
             <div class="company">
-              <h3>Moravia · HP · Newsoft</h3>
+              <h3><span data-zh>Moravia（RWS Moravia） · HP · Newsoft</span><span data-en>Moravia (RWS Moravia) · HP · Newsoft</span></h3>
               <div class="role"><span data-zh>国际化 · 本地化 · 全球交付</span><span data-en>Internationalization · Localization · Global Delivery</span></div>
             </div>
-            <p data-zh>在全球科技与专业服务环境中，长期参与产品国际化、本地化与跨市场交付，把产品、语言、文化、流程与全球协作连接到可执行的项目体系，并由此形成对全球产品生命周期和市场适配的系统理解。</p>
-            <p data-en>Across global technology and professional-services environments, worked on product internationalization, localization and cross-market delivery — connecting product, language, culture, process and global collaboration into executable programs. This work shaped a systems view of global product lifecycles and market adaptation.</p>
+            <p data-zh>这一阶段的直接职业经历是 Moravia（RWS Moravia）、HP 与 Newsoft，工作集中在产品国际化、本地化与跨市场交付：把产品、语言、文化、流程与全球协作连接到可执行的项目体系，并由此形成对全球产品生命周期和市场适配的理解。此阶段服务过的客户与项目，不构成另外的任职经历。</p>
+            <p data-en>This chapter is direct work at Moravia (RWS Moravia), HP and Newsoft, centered on product internationalization, localization and cross-market delivery — connecting product, language, culture, process and global collaboration into executable programs, and forming a systems view of global product lifecycles and market adaptation. Clients and programs served in this period are not additional employers.</p>
           </div>
           <div class="role-row">
             <div class="phase"><span data-zh>数字业务与运营</span><span data-en>Digital Business & Operations</span></div>
@@ -458,8 +456,8 @@
               <h3>Active Network</h3>
               <div class="role"><span data-zh>数字业务 · 运营 · 跨团队交付</span><span data-en>Digital Business · Operations · Cross-team Delivery</span></div>
             </div>
-            <p data-zh>在全球化数字业务环境中积累业务运营、项目推进、技术服务与跨团队协作经验，进一步理解复杂组织中的流程设计、协同机制与规模化交付，以及数字产品如何把业务目标转化为可执行的运营过程。</p>
-            <p data-en>Built experience in business operations, program execution, technology services and cross-team delivery in a global digital environment, with deeper exposure to process design, organizational coordination, scalable delivery and the link between digital products and operating outcomes.</p>
+            <p data-zh>在 Active Network 的直接工作中，积累数字业务运营、项目推进、技术服务与跨团队协作经验，进一步理解复杂组织里的流程、协同与规模化交付，以及数字产品如何把业务目标变成可执行的运营过程。</p>
+            <p data-en>Direct work at Active Network in business operations, program execution, technology services and cross-team delivery, within a global digital business. The chapter is about process, coordination, scalable delivery, and how digital products turn business goals into an operating rhythm.</p>
           </div>
           <div class="role-row">
             <div class="phase"><span data-zh>汽车产品与全球市场</span><span data-en>Automotive Products & Global Markets</span></div>
@@ -467,12 +465,12 @@
               <h3>Telenav</h3>
               <div class="role"><span data-zh>汽车导航 · 全球产品管理 · 跨市场协同</span><span data-en>Automotive Navigation · Global Product Management · Cross-market Collaboration</span></div>
             </div>
-            <p data-zh>从事汽车导航与地图相关产品管理，持续参与多市场产品规划、地图数据、区域适配、功能演进、数据源切换、客户需求与跨团队协同，在复杂车载产品中平衡全球一致性、本地市场需求与规模化交付。</p>
-            <p data-en>Product management across automotive navigation and map products, spanning multi-market planning, map data, regional adaptation, feature evolution, data-source transitions, customer requirements and cross-functional collaboration — with a recurring focus on balancing global consistency, local-market needs and scalable delivery.</p>
+            <p data-zh>在 Telenav 的直接工作中，从事汽车导航与地图相关产品管理，持续参与多市场产品规划、地图数据、区域适配、功能演进、数据源切换、客户需求与跨团队协同，在复杂车载产品中平衡全球一致性、本地市场需求与规模化交付。这里的客户与品牌是产品工作的对象，不是另外的任职机构。</p>
+            <p data-en>Direct product-management work at Telenav across automotive navigation and map products, spanning multi-market planning, map data, regional adaptation, feature evolution, data-source transitions, customer requirements and cross-functional collaboration — balancing global consistency, local-market needs and scalable delivery. Customers and brands in this work are the subject of the product, not additional employers.</p>
           </div>
         </div>
-        <div class="career-note" data-zh>这些阶段逐步形成了一条清晰的专业主线：先理解全球产品如何跨语言、文化与市场完成适配，再理解数字业务如何依靠流程与运营实现规模化，最终在汽车产品与全球市场中持续处理全球一致性、本地需求与复杂交付之间的平衡。</div>
-        <div class="career-note" data-en>Together, these three chapters form a coherent progression: from understanding how global products adapt across language, culture and markets; to learning how digital businesses scale through process and operations; and then to managing automotive products across global markets, where global consistency and local requirements have to coexist.</div>
+        <div class="career-note" data-zh>这些经历分布在不同企业、行业与产品环境中，但长期关注的问题相对一致：复杂产品如何进入不同市场，全球一致性与本地适配如何取得平衡，以及产品、组织与市场如何形成能够持续运行的协作机制。《出海新势力》和 GoxEDGE，是对这些长期实践与观察的一次系统整理，而不是对某一家企业经验的直接复制。</div>
+        <div class="career-note" data-en>These experiences sit in different companies, industries and product settings, but the question underneath has stayed much the same: how a complex product enters different markets, how global consistency and local adaptation are held in balance, and how product, organization and market form a way of working that can keep running. 出海新势力 and GoxEDGE are a structured account of that long practice and observation, not a copy of any one company's experience.</div>
       </div>
     </section>
 
@@ -501,10 +499,10 @@
         <div class="section-head">
           <div class="section-kicker">04 / <span data-zh>著作</span><span data-en>Book</span></div>
           <div>
-            <h2 data-zh>《出海新势力》</h2>
-            <h2 data-en>出海新势力</h2>
-            <p class="sublede" data-zh>一本围绕中国企业全球拓展的系统性作品，关注企业如何从“走出去”进一步走向“走下去”，并在目标市场逐步形成可持续的全球经营能力。书中提出并展开 GoxEDGE 全球拓展战略模型。</p>
-            <p class="sublede" data-en>A Chinese-language book built around the GoxEDGE Global Expansion Strategy Model, focused on how companies move beyond market entry and build the capabilities required to adapt, operate and stay over time.</p>
+            <h2 data-zh>《出海新势力：GoxEDGE全球拓展战略模型》</h2>
+            <h2 data-en>GoxEDGE: Global Expansion Strategy Model</h2>
+            <p class="sublede" data-zh>一本尚未正式上市的中文著作，将由机械工业出版社出版。它关注企业如何从“走出去”进一步走向“走下去”，并在书中提出 GoxEDGE 全球拓展战略模型。</p>
+            <p class="sublede" data-en>A forthcoming Chinese-language book, to be published by China Machine Press. It looks at how companies move beyond market entry, and it sets out the GoxEDGE model.</p>
           </div>
         </div>
         <div class="book-shell">
@@ -523,7 +521,7 @@
             <div class="meta"><span data-zh>机械工业出版社 · 即将出版</span><span data-en>China Machine Press · Forthcoming</span></div>
             <h3 data-zh>从“走出去”到“走下去”</h3>
             <h3 data-en>From entering overseas markets to building the capability to stay and operate</h3>
-            <p data-zh>《出海新势力》讨论的不是如何把同一个产品卖到更多国家，而是企业如何判断起点、选择市场、设计路径、形成能力，并在不断变化的规则、市场、文化与组织条件下真正“走下去”。</p>
+            <p data-zh>这本书讨论的不是如何把同一个产品卖到更多国家，而是企业如何判断起点、选择市场、设计路径、形成能力，并在不断变化的规则、市场、文化与组织条件下真正“走下去”。</p>
             <p data-en>The book is not simply about selling the same product in more countries. It examines how companies assess their starting point, select markets, design an expansion path, build the required capabilities, and continue operating as rules, markets, cultures and organizational demands change.</p>
             <div class="book-keyline">
               <strong data-zh>GoxEDGE 全球拓展战略模型</strong>
@@ -540,7 +538,7 @@
               <div class="book-point"><span data-zh>认知—行动—反馈飞轮：把实践经验转化为持续学习与能力沉淀</span><span data-en>Cognition–action–feedback flywheel: turning practice into continuous learning and reusable capability</span></div>
             </div>
             <div class="book-actions">
-              <a class="btn primary" href="https://goxedge.com/?utm_source=iseeworlds&amp;utm_medium=referral&amp;utm_campaign=author_site"><span data-zh>了解 GoxEDGE</span><span data-en>Explore GoxEDGE</span></a>
+              <a class="btn primary" href="https://goxedge.com/?utm_source=iseeworlds&amp;utm_medium=referral&amp;utm_campaign=author_site"><span data-zh>了解《出海新势力》与 GoxEDGE →</span><span data-en>Explore the book and GoxEDGE →</span></a>
             </div>
           </div>
         </div>
@@ -615,21 +613,21 @@
           <div>
             <div class="bio-box">
               <h3><span data-zh>中文短简介</span><span data-en>Short Bio</span></h3>
-              <p data-zh>何敏（Darren He），北京大学光华管理学院 MBA，《出海新势力》作者，GoxEDGE 全球拓展战略模型提出者。拥有 20 多年全球产品、国际化与本地化相关经验，持续参与跨市场产品规划、区域适配与全球业务协同，职业实践覆盖科技服务、数字业务与汽车软件。</p>
-              <p data-en>Darren He is a product manager and author with more than 20 years of experience in global products, internationalization and localization. His work spans technology services, digital business and automotive software, with sustained involvement in cross-market product planning, regional adaptation and global collaboration. He holds an MBA from Peking University's Guanghua School of Management, is the author of the Chinese-language book <em>出海新势力</em>, and the creator of the GoxEDGE Global Expansion Strategy Model.</p>
+              <p data-zh>何敏 · Darren He，产品经理与作者，拥有 20 多年全球产品、国际化与本地化相关经验。北京大学光华管理学院 MBA，《出海新势力：GoxEDGE全球拓展战略模型》作者。专业主线是全球产品、国际化与本地化，以及跨市场协作。</p>
+              <p data-en>Darren He is a product leader and author with more than two decades of experience in global products, internationalization and localization. He holds an MBA from Peking University's Guanghua School of Management and is the author of GoxEDGE: Global Expansion Strategy Model.</p>
             </div>
             <div class="bio-box">
               <h3><span data-zh>中文长简介</span><span data-en>Extended Bio</span></h3>
-              <p data-zh>何敏（Darren He），北京大学光华管理学院 MBA，《出海新势力》作者，GoxEDGE 全球拓展战略模型提出者。拥有 20 多年全球产品、国际化与本地化相关经验，持续参与跨市场产品规划、市场适配与全球业务协同。曾参与多家全球科技企业的产品国际化与本地化实践，并持续参与汽车、科技等行业面向海外市场的产品规划、区域适配与跨市场协同。聚焦企业从“走出去”到“走下去”过程中面临的战略判断、路径设计、产品全球化、市场适配与组织承接问题，致力于将实践、观察与研究沉淀为系统、可应用的方法框架。</p>
-              <p data-en>Darren He is an MBA graduate of Peking University's Guanghua School of Management, the author of the Chinese-language book <em>出海新势力</em>, and the creator of the GoxEDGE Global Expansion Strategy Model. With more than two decades of experience in global products, internationalization and localization, he has worked across cross-market product planning, market adaptation and global business collaboration. His experience includes product internationalization and localization programs for global technology companies, as well as product planning, regional adaptation and cross-market collaboration in automotive and technology sectors. His work focuses on the strategic choices, expansion paths, product globalization, market adaptation and organizational capabilities required for companies to move from entering overseas markets to operating in them sustainably.</p>
+              <p data-zh>何敏 · Darren He，产品经理与作者，北京大学光华管理学院 MBA，《出海新势力：GoxEDGE全球拓展战略模型》作者。拥有 20 多年全球产品、国际化与本地化相关经验，职业实践覆盖国际化与本地化、数字业务与运营，以及汽车产品中的跨市场产品规划、区域适配与全球协同。这些经历分布在不同企业与产品环境中，关注复杂产品如何进入不同市场并持续运行。这本书是对长期实践的整理，不是对某一家企业经验的直接复制。</p>
+              <p data-en>Darren He is a product leader and author with more than two decades of experience in global products, internationalization and localization. He holds an MBA from Peking University's Guanghua School of Management and is the author of GoxEDGE: Global Expansion Strategy Model. His work spans globalization and localization, digital business and operations, and automotive products, including cross-market product planning, regional adaptation and global collaboration. Those chapters come from different companies and product settings. The book organizes that long practice. It is not a copy of any single organization's experience.</p>
             </div>
           </div>
           <div class="media-list">
             <div class="media-row"><b><span data-zh>姓名</span><span data-en>Name</span></b><span><span data-zh>何敏 · Darren He</span><span data-en>Darren He</span></span></div>
             <div class="media-row"><b><span data-zh>作者照片</span><span data-en>Portrait</span></b><span><span data-zh>专业肖像 · <a class="media-download" href="assets/darren-portrait.png" download="darren-portrait.png">下载高分辨率版本</a></span><span data-en>Professional portrait · <a class="media-download" href="assets/darren-portrait.png" download="darren-portrait.png">Download high-resolution version</a></span></span></div>
-            <div class="media-row"><b><span data-zh>著作</span><span data-en>Book</span></b><span><span data-zh>《出海新势力》</span><span data-en><em>出海新势力</em> (Chinese-language book)</span></span></div>
+            <div class="media-row"><b><span data-zh>著作</span><span data-en>Book</span></b><span><span data-zh>《出海新势力：GoxEDGE全球拓展战略模型》 · 即将出版</span><span data-en>GoxEDGE: Global Expansion Strategy Model · Forthcoming</span></span></div>
             <div class="media-row"><b><span data-zh>方法模型</span><span data-en>Model</span></b><span><span data-zh>GoxEDGE 全球拓展战略模型</span><span data-en>GoxEDGE Global Expansion Strategy Model</span></span></div>
-            <div class="media-row"><b><span data-zh>教育</span><span data-en>Education</span></b><span><span data-zh>北京大学光华管理学院 MBA</span><span data-en>MBA, PKU Guanghua School of Management</span></span></div>
+            <div class="media-row"><b><span data-zh>教育</span><span data-en>Education</span></b><span><span data-zh>北京大学光华管理学院 MBA</span><span data-en>MBA, Peking University's Guanghua School of Management</span></span></div>
           </div>
         </div>
       </div>
@@ -672,7 +670,6 @@
         </div>
         <div class="contact-list">
           <div class="contact-row"><strong>WeChat</strong><span>iseeworlds-com</span></div>
-          <div class="contact-row"><strong>LinkedIn</strong><a href="https://www.linkedin.com/in/darren-iseeworlds" target="_blank" rel="noopener">www.linkedin.com/in/darren-iseeworlds</a></div>
           <div class="contact-row"><strong>Email</strong><a href="mailto:darren.he@iseeworlds.com">darren.he@iseeworlds.com</a></div>
         </div>
       </div>
