@@ -41,11 +41,25 @@
         "alternateName": "何敏",
         "url": "https://iseeworlds.com/",
         "image": "https://iseeworlds.com/assets/darren-portrait-900.webp",
-        "jobTitle": "Product Manager and Author",
+        "jobTitle": "Global Product Practitioner and Author",
+        "knowsAbout": [
+          "Global Product Management",
+          "Internationalization",
+          "Localization",
+          "Global Enterprise Management",
+          "Automotive Software"
+        ],
         "alumniOf": {
           "@type": "CollegeOrUniversity",
           "name": "Peking University Guanghua School of Management"
         }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://gemtia.com/#organization",
+        "name": "GEMTIA",
+        "url": "https://gemtia.com/",
+        "founder": {"@id": "https://iseeworlds.com/#person"}
       },
       {
         "@type": "Book",
@@ -169,7 +183,7 @@
     body.lang-en .contact-lede{font-size:15.2px;line-height:1.7}
 
     section{padding:82px 0;border-bottom:1px solid var(--line)}
-    #about,#book,#media{background:#fff}
+    #about,#book,#knowledge,#media{background:#fff}
     #experience,#focus,#ideas,#speaking,#now,#contact{background:var(--paper)}
     .section-head{display:grid;grid-template-columns:185px 1fr;gap:52px;margin-bottom:44px}
     .section-kicker{font-size:13px;letter-spacing:.11em;text-transform:uppercase;color:#1d6aa5;font-weight:820;padding-top:5px;line-height:1.35}
@@ -228,6 +242,16 @@
     .note-kicker{font-size:10px;letter-spacing:.12em;color:var(--accent);font-weight:700;margin-bottom:12px}
     .idea-block a{display:inline-block;margin-top:14px;font-size:12.5px;font-weight:650;color:var(--accent)}
     .idea-block a:hover{text-decoration:underline}
+    #knowledge{padding:56px 0}
+    .knowledge-title{font-size:22px;line-height:1.35;margin:0 0 22px;font-weight:650}
+    .knowledge-layout{display:grid;grid-template-columns:1.45fr .75fr;gap:36px;align-items:start}
+    .knowledge-platform{background:var(--surface);border:1px solid #d9e4eb;border-radius:10px;padding:25px;box-shadow:0 8px 26px rgba(24,56,82,.045)}
+    .knowledge-platform h3,.knowledge-method h3{font-size:17px;margin:0 0 9px;font-weight:650;line-height:1.4}
+    .knowledge-platform p,.knowledge-method p{font-size:13px;color:var(--muted);margin:0 0 12px;line-height:1.7}
+    .knowledge-platform .knowledge-mark{font-size:11px;letter-spacing:.03em;color:var(--soft);margin:0 0 14px}
+    .knowledge-platform a,.knowledge-method a{display:inline-block;margin-top:2px;font-size:12.5px;font-weight:650;color:var(--accent)}
+    .knowledge-platform a:hover,.knowledge-method a:hover{text-decoration:underline}
+    .knowledge-method{padding-top:8px;border-top:2px solid #183c58}
     .questions-label{margin:34px 0 0;font-size:15px;font-weight:650;color:#1d6aa5}
     .question a:hover{text-decoration:underline}
     .question-list{margin-top:28px;border-top:2px solid #183c58}
@@ -287,6 +311,8 @@
     .footer-person img{width:34px;height:34px;border-radius:50%;object-fit:cover;object-position:center 17%}
     .footer-person strong{font-size:12px;color:var(--ink)}
     .footer-note{max-width:430px;text-align:right;line-height:1.65}
+    .footer-links{margin-top:2px}
+    .footer-links a:hover{color:var(--accent)}
 
     @media(max-width:1120px){
       .profile-strip .wrap{padding-left:42px;padding-right:42px}
@@ -302,7 +328,7 @@
       .navlinks>a{display:none}
       .menu-toggle{display:inline-flex;flex-direction:column;justify-content:center}
       .mobile-menu.open{display:block}
-      .hero-main,.about-grid,.section-head,.book-shell,.speaking-grid,.media-grid,.now-grid,.contact-grid{grid-template-columns:1fr}
+      .hero-main,.about-grid,.section-head,.book-shell,.speaking-grid,.media-grid,.now-grid,.contact-grid,.knowledge-layout{grid-template-columns:1fr}
       .contact-list{margin-left:0;max-width:none}
       .hero-main{gap:44px}
       .portrait-wrap{margin:0;max-width:350px;width:56%}
@@ -385,8 +411,8 @@
         <div>
           <div class="eyebrow"><span data-zh>作者 · 全球产品 · 跨市场实践</span><span data-en>Author · Global Product · Cross-market Practice</span></div>
           <h1 data-zh>何敏 · Darren He</h1><h1 data-en>Darren He</h1>
-          <p class="hero-lede" data-zh>产品经理与作者，拥有 20 多年全球产品、国际化与本地化相关经验。北京大学光华管理学院 MBA，《出海新势力》作者，GoxEDGE 全球拓展战略模型提出者。</p>
-          <p class="hero-lede" data-en>Darren He is a product manager and author with more than two decades of experience in global products, internationalization and localization. He holds an MBA from Peking University's Guanghua School of Management and is the author of 《出海新势力》 and the creator of the GoxEDGE Global Expansion Strategy Model.</p>
+          <p class="hero-lede" data-zh>全球产品与全球经营实践者、作者，拥有 20 多年全球产品、国际化与本地化相关经验。北京大学光华管理学院 MBA，《出海新势力》作者、GoxEDGE 全球拓展战略模型提出者，GEMTIA 发起人。</p>
+          <p class="hero-lede" data-en>Darren He is a global product and cross-market practitioner, author, and founder of GEMTIA. He has more than two decades of experience in global products, internationalization and localization, holds an MBA from Peking University's Guanghua School of Management, and is the author of 《出海新势力》 and creator of the GoxEDGE Global Expansion Strategy Model.</p>
           <div class="tagline">
             <strong data-zh>看见新世界，看见新可能</strong>
             <strong data-en>I See Worlds. I See Possibilities.</strong>
@@ -430,11 +456,11 @@
         <div class="about-grid">
           <div class="prose" data-zh>
             <p>过去二十多年，我的职业实践持续围绕一个问题展开：一个复杂产品跨越语言、文化、市场与组织边界之后，如何仍然保持可用、可运营并能够持续演进。</p>
-            <p>从国际化与本地化、数字业务与运营，到汽车导航与全球产品管理，不同阶段反复面对的是同一种跨市场复杂性。iSeeWorlds 用来记录这些实践如何逐渐形成判断、文章与方法；《出海新势力》和 GoxEDGE，则是其中一次更系统的整理。</p>
+            <p>从国际化与本地化、数字业务与运营，到汽车导航与全球产品管理，不同阶段反复面对的是同一种跨市场复杂性。iSeeWorlds 是我的个人思想与写作空间，用来记录这些实践如何逐渐形成判断、文章与方法；《出海新势力》和 GoxEDGE，则是其中一次更系统的整理。GEMTIA 是我发起的全球经营知识与实践平台，面向更开放的案例、证据、研究与共同讨论。</p>
           </div>
           <div class="prose" data-en>
             <p>For more than two decades, the work has stayed with one question: after a complex product crosses language, cultural, market and organizational boundaries, how does it remain usable, operable and able to keep evolving?</p>
-            <p>From internationalization and localization, through digital business and operations, to automotive navigation and global product management, the settings changed and the cross-market complexity did not. iSeeWorlds is where that practice becomes judgment, writing and method. 《出海新势力》 and GoxEDGE are one more systematic account of it.</p>
+            <p>From internationalization and localization, through digital business and operations, to automotive navigation and global product management, the settings changed and the cross-market complexity did not. iSeeWorlds is my personal space for thinking and writing, where that practice becomes judgment, notes and method. 《出海新势力》 and GoxEDGE are one more systematic account of it. GEMTIA is the knowledge and practice platform I started, for more open cases, evidence, research and shared discussion.</p>
           </div>
           <div class="facts">
             <div class="fact"><b><span data-zh>教育</span><span data-en>Education</span></b><span><span data-zh>北京大学光华管理学院 MBA</span><span data-en>MBA, Peking University's Guanghua School of Management</span></span></div>
@@ -622,13 +648,36 @@
       </div>
     </section>
 
+    <section id="knowledge">
+      <div class="wrap">
+        <h2 class="knowledge-title"><span data-zh>知识与实践</span><span data-en>Knowledge &amp; Practice</span></h2>
+        <div class="knowledge-layout">
+          <article class="knowledge-platform">
+            <div class="note-kicker">GEMTIA</div>
+            <h3><span data-zh>全球经营知识与实践平台</span><span data-en>A knowledge and practice platform for global enterprise management</span></h3>
+            <p data-zh>由何敏发起，围绕 Global Enterprise Management 持续整理领域问题、案例、研究资料、模式与开放命题。全球经营（Global Enterprise Management, GEM）关注企业如何跨市场建立、运行并持续演进业务。</p>
+            <p data-en>Darren He started GEMTIA to gather questions, cases, research, patterns and open problems around Global Enterprise Management. Global Enterprise Management (GEM) looks at how an enterprise builds, runs and keeps evolving a business across markets.</p>
+            <p class="knowledge-mark">Thinking · Intelligence · Action</p>
+            <a href="https://gemtia.com/?utm_source=iseeworlds&amp;utm_medium=referral&amp;utm_campaign=knowledge_platform" target="_blank" rel="noopener noreferrer"><span data-zh>探索 GEMTIA →</span><span data-en>Explore GEMTIA →</span></a>
+          </article>
+          <aside class="knowledge-method">
+            <div class="note-kicker"><span data-zh>著作 · 方法</span><span data-en>Authored method</span></div>
+            <h3>《出海新势力》 · GoxEDGE</h3>
+            <p data-zh>全球拓展战略模型。尚未正式上市的中文著作，书中提出这一模型，将由机械工业出版社出版。</p>
+            <p data-en>Global Expansion Strategy Model. A forthcoming Chinese-language book that introduces the model, to be published by China Machine Press.</p>
+            <a href="https://goxedge.com/?utm_source=iseeworlds&amp;utm_medium=referral&amp;utm_campaign=author_site" target="_blank" rel="noopener noreferrer"><span data-zh>了解《出海新势力》与 GoxEDGE →</span><span data-en>Explore the book and GoxEDGE →</span></a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
     <section id="speaking">
       <div class="wrap">
         <div class="section-head">
           <div class="section-kicker">06 / <span data-zh>演讲与交流</span><span data-en>Speaking</span></div>
           <div>
             <h2 data-zh>围绕全球产品、跨市场实践与全球经营展开讨论</h2>
-            <h2 data-en>Conversations on global products, cross-market work and global expansion</h2>
+            <h2 data-en>Conversations on global products, cross-market practice and global enterprise management</h2>
             <p class="sublede" data-zh>适合高校、行业会议、作者活动、专业社群与企业内部交流。主题可根据听众背景调整，但内容始终围绕真实实践、方法框架与可讨论的问题展开。</p>
             <p class="sublede" data-en>For universities, industry conferences, author events, professional communities and internal company sessions. Topics can be adjusted to the audience. The content stays with real practice, usable frameworks and questions that can actually be discussed.</p>
           </div>
@@ -681,8 +730,8 @@
           <div>
             <div class="bio-box">
               <h3><span data-zh>中文短简介</span><span data-en>Short Bio</span></h3>
-              <p data-zh>何敏 · Darren He，产品经理与作者，拥有 20 多年全球产品、国际化与本地化相关经验。北京大学光华管理学院 MBA，《出海新势力》作者，GoxEDGE 全球拓展战略模型提出者。专业主线是全球产品、国际化与本地化，以及跨市场协作。</p>
-              <p data-en>Darren He is a product manager and author with more than two decades of experience in global products, internationalization and localization. He holds an MBA from Peking University's Guanghua School of Management, is the author of 《出海新势力》, and the creator of the GoxEDGE Global Expansion Strategy Model.</p>
+              <p data-zh>何敏 · Darren He，全球产品与全球经营实践者、作者，拥有 20 多年全球产品、国际化与本地化相关经验。北京大学光华管理学院 MBA，《出海新势力》作者、GoxEDGE 全球拓展战略模型提出者，GEMTIA 发起人。</p>
+              <p data-en>Darren He is a global product and cross-market practitioner, author, and founder of GEMTIA. He has more than two decades of experience in global products, internationalization and localization, holds an MBA from Peking University's Guanghua School of Management, and is the author of 《出海新势力》 and creator of the GoxEDGE Global Expansion Strategy Model.</p>
             </div>
           </div>
           <div class="media-list">
@@ -690,6 +739,7 @@
             <div class="media-row"><b><span data-zh>作者照片</span><span data-en>Portrait</span></b><span><span data-zh>专业肖像 · <a class="media-download" href="assets/darren-portrait.png" download="darren-portrait.png">下载高分辨率版本</a></span><span data-en>Professional portrait · <a class="media-download" href="assets/darren-portrait.png" download="darren-portrait.png">Download high-resolution version</a></span></span></div>
             <div class="media-row"><b><span data-zh>著作</span><span data-en>Book</span></b><span><span data-zh>《出海新势力》 · 即将出版</span><span data-en>《出海新势力》, Chinese-language book · Forthcoming</span></span></div>
             <div class="media-row"><b><span data-zh>方法模型</span><span data-en>Model</span></b><span><span data-zh>GoxEDGE 全球拓展战略模型</span><span data-en>GoxEDGE Global Expansion Strategy Model</span></span></div>
+            <div class="media-row"><b><span data-zh>知识平台</span><span data-en>Knowledge Platform</span></b><span><span data-zh>GEMTIA · 全球经营知识与实践平台发起人</span><span data-en>Founder, GEMTIA</span></span></div>
             <div class="media-row"><b><span data-zh>教育</span><span data-en>Education</span></b><span><span data-zh>北京大学光华管理学院 MBA</span><span data-en>MBA, Peking University's Guanghua School of Management</span></span></div>
           </div>
         </div>
@@ -749,6 +799,7 @@
       <div class="footer-note">
         <div><span data-zh>© <span class="copyright-year">2026</span> 何敏 · Darren He | 新见界 · iSeeWorlds</span><span data-en>© <span class="copyright-year">2026</span> Darren He | iSeeWorlds</span></div>
         <div><span data-zh>个人网站 · 本站内容仅代表个人观点</span><span data-en>Personal website · Views expressed here are my own</span></div>
+        <div class="footer-links"><a href="https://gemtia.com/" target="_blank" rel="noopener noreferrer">GEMTIA</a> / <a href="https://goxedge.com/" target="_blank" rel="noopener noreferrer">GoxEDGE</a></div>
       </div>
     </div>
   </footer>
